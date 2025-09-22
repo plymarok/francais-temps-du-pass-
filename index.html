@@ -1,158 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Révisions — Valeurs des temps du passé (4e)</title>
-<style>
-  :root{
-    --bg:#f6f8fb; --card:#ffffff; --ink:#0f172a; --muted:#475569;
-    --brand:#38bdf8; --brand-2:#a78bfa;
-    --ok:#16a34a; --no:#dc2626;
-    --rose:#d81b60;    /* Imparfait */
-    --green:#15803d;   /* Passé simple */
-    --orange:#ea580c;  /* Plus-que-parfait */
-    --radius:16px; --shadow:0 10px 28px rgba(2,8,23,.08);
-  }
-  *{box-sizing:border-box}
-  body{margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial; background:var(--bg); color:var(--ink)}
-  header{
-    background: linear-gradient(135deg, var(--brand), #3b82f6 60%);
-    color:#fff; padding:28px 18px; text-align:center;
-  }
-  header h1{margin:0 0 6px; font-size:clamp(1.25rem,2.2vw,1.8rem)}
-  header p{margin:0; opacity:.9}
-  nav{
-    position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid #e2e8f0;
-    display:flex; gap:10px; align-items:center; padding:8px 12px; overflow:auto;
-  }
-  nav button{
-    background:#fff; border:1px solid #e2e8f0; color:#0f172a; padding:8px 12px; border-radius:999px; cursor:pointer;
-  }
-  nav button.active{background:#0ea5e9; color:#fff; border-color:#0ea5e9}
-  main{max-width:1000px; margin:20px auto; padding:0 12px 40px}
-  .card{background:var(--card); border:1px solid #e2e8f0; border-radius:var(--radius); box-shadow:var(--shadow); padding:20px; margin:14px 0}
-  h2{margin:0 0 12px; font-size:clamp(1.1rem,2vw,1.4rem)}
-  table{border-collapse:collapse; width:100%}
-  th,td{border:1px solid #e2e8f0; padding:10px; text-align:left}
-  th{background:#f1f5f9}
-  .legend{font-size:.9rem; color:var(--muted)}
-  .chip{display:inline-flex; align-items:center; gap:6px; padding:2px 10px; border-radius:999px; border:1px solid #e2e8f0; background:#fff; margin-right:6px}
-  .imparfait{color:var(--rose); font-weight:600}
-  .passe-simple{color:var(--green); font-weight:600}
-  .plus-que-parfait{color:var(--orange); font-weight:600}
-
-  /* QCM */
-  .qcm-controls{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:10px}
-  .qcm-controls select,.qcm-controls button{padding:8px 10px; border-radius:10px; border:1px solid #e2e8f0; background:#fff; cursor:pointer}
-  .qcm-question{border:1px solid #e2e8f0; border-radius:14px; padding:14px; margin:14px 0; background:#fff}
-  .q-title{font-weight:600; margin-bottom:6px}
-  .q-legend{font-size:.85rem; color:var(--muted); margin:6px 0 12px}
-  .q-options{display:grid; gap:8px}
-  .q-option{padding:9px 12px; border:1px solid #cbd5e1; border-radius:10px; cursor:pointer; background:#fff}
-  .q-option:hover{background:#f8fafc}
-  .correct{background:#dcfce7 !important; border-color:#86efac !important}
-  .incorrect{background:#fee2e2 !important; border-color:#fca5a5 !important}
-  .feedback{margin-top:10px; background:#f1f5f9; border-left:4px solid var(--brand); padding:10px; border-radius:8px}
-  .progress{display:flex; align-items:center; gap:10px; margin-top:10px}
-  .bar{flex:1; height:10px; background:#e2e8f0; border-radius:999px; overflow:hidden}
-  .bar>span{display:block; height:100%; background:#10b981; width:0%}
-
-  /* Exercices d'écriture */
-  .exemple{display:none; margin-top:8px; padding:12px; background:#f8fafc; border-left:4px solid var(--brand); border-radius:10px}
-  .actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
-  .btn{background:#0ea5e9; color:#fff; border:none; padding:8px 12px; border-radius:10px; cursor:pointer}
-  .btn.secondary{background:#fff; color:#0f172a; border:1px solid #e2e8f0}
-
-  /* Footer */
-  footer{color:#64748b; text-align:center; padding:20px 10px}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Valeurs des temps du passé — 4e</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Révisions — Les valeurs des temps du passé</h1>
+    <h1>Révisions — Valeurs des temps du passé</h1>
     <p>Site pédagogique 4e : cours clair, QCM interactif, écriture guidée, transformations.</p>
   </header>
 
-  <nav>
+  <nav aria-label="Sections">
     <button class="active" data-go="#cours">Cours</button>
-    <button data-go="#tableau">Tableau mémo</button>
     <button data-go="#qcm">QCM (30)</button>
     <button data-go="#ecriture">Écriture</button>
-    <button data-go="#transfo">Transformation</button>
+    <button data-go="#transfo">Transformation (20)</button>
   </nav>
 
   <main>
-
     <!-- COURS -->
     <section id="cours" class="card">
-      <h2>📖 Le cours — Rôles des temps du passé</h2>
+      <h2>📖 Le cours — Rôles des temps</h2>
       <p class="legend">
         <span class="chip"><span class="imparfait">🌸 Imparfait</span> : décor, habitude, action de fond</span>
         <span class="chip"><span class="passe-simple">💚 Passé simple</span> : actions principales, successives</span>
-        <span class="chip"><span class="plus-que-parfait">🟧 Plus-que-parfait</span> : <em>déjà avant</em> une autre action passée</span>
+        <span class="chip"><span class="plus-que-parfait">🟧 Plus-que-parfait</span> : « déjà avant » une autre action passée</span>
       </p>
 
-      <div class="card" style="box-shadow:none; border-style:dashed">
-        <h3 class="imparfait">Imparfait — 🌸</h3>
+      <div class="subcard">
+        <h3 class="imparfait">Imparfait 🌸</h3>
         <ul>
-          <li><strong>Description/décor</strong> : Il <span class="imparfait">faisait</span> doux, la ville <span class="imparfait">brillait</span>.</li>
-          <li><strong>Habitude</strong> : Chaque soir, elle <span class="imparfait">lisait</span> au salon.</li>
+          <li><strong>Description</strong> : La ville <span class="imparfait">brillait</span>.</li>
+          <li><strong>Habitude</strong> : Il <span class="imparfait">lisait</span> chaque soir.</li>
           <li><strong>Action de fond</strong> : Je <span class="imparfait">marchais</span> quand la pluie commença.</li>
         </ul>
       </div>
-
-      <div class="card" style="box-shadow:none; border-style:dashed">
-        <h3 class="passe-simple">Passé simple — 💚</h3>
+      <div class="subcard">
+        <h3 class="passe-simple">Passé simple 💚</h3>
         <ul>
-          <li><strong>Action ponctuelle</strong> : Il <span class="passe-simple">entra</span> et <span class="passe-simple">salua</span>.</li>
-          <li><strong>Actions successives</strong> : Il <span class="passe-simple">prit</span> son sac puis <span class="passe-simple">sortit</span>.</li>
+          <li><strong>Action ponctuelle</strong> : Il <span class="passe-simple">entra</span>.</li>
+          <li><strong>Successions</strong> : Il <span class="passe-simple">prit</span> son sac puis <span class="passe-simple">sortit</span>.</li>
         </ul>
       </div>
-
-      <div class="card" style="box-shadow:none; border-style:dashed">
-        <h3 class="plus-que-parfait">Plus-que-parfait — 🟧</h3>
+      <div class="subcard">
+        <h3 class="plus-que-parfait">Plus-que-parfait 🟧</h3>
         <ul>
           <li><strong>Antériorité</strong> : action <em>achevée</em> <u>avant</u> un autre passé.</li>
-          <li><strong>Formation</strong> : auxiliaire <em>avoir/être</em> à l’imparfait + participe passé : <em>j’<u>avais</u> terminé</em>, <em>elle <u>était</u> partie</em>.</li>
-          <li><strong>Indices fréquents</strong> : déjà, avant, lorsque, après que…</li>
+          <li><strong>Formation</strong> : avoir/être à l’imparfait + participe : <em>j’<u>avais</u> terminé</em>, <em>elle <u>était</u> partie</em>.</li>
+          <li><strong>Indices</strong> : déjà, avant, lorsque, après que…</li>
         </ul>
-        <p>Exemple : Quand j’arrivai (💚), elle <span class="plus-que-parfait">avait déjà mangé</span> (🟧) → le repas est <em>antérieur</em> à l’arrivée.</p>
+        <p>Ex. : Quand j’arrivai (💚), elle <span class="plus-que-parfait">avait déjà mangé</span> (🟧) → le repas est antérieur à l’arrivée.</p>
       </div>
-    </section>
 
-    <!-- TABLEAU MEMO -->
-    <section id="tableau" class="card">
-      <h2>🧭 Tableau mémo</h2>
-      <table>
+      <table class="memo">
         <thead><tr><th>Temps</th><th>Valeurs</th><th>Exemple</th></tr></thead>
         <tbody>
-          <tr>
-            <td class="imparfait">Imparfait 🌸</td>
-            <td>Description, habitude, action en cours</td>
-            <td>Le vent <span class="imparfait">soufflait</span> dans les arbres.</td>
-          </tr>
-          <tr>
-            <td class="passe-simple">Passé simple 💚</td>
-            <td>Action ponctuelle, actions successives</td>
-            <td>Il <span class="passe-simple">ouvrit</span> la porte et <span class="passe-simple">entra</span>.</td>
-          </tr>
-          <tr>
-            <td class="plus-que-parfait">Plus-que-parfait 🟧</td>
-            <td>Action achevée <em>avant</em> un autre passé (antériorité)</td>
-            <td>Elle <span class="plus-que-parfait">avait rangé</span> ses affaires.</td>
-          </tr>
+          <tr><td class="imparfait">Imparfait 🌸</td><td>Description, habitude, fond</td><td>Le vent <span class="imparfait">soufflait</span>.</td></tr>
+          <tr><td class="passe-simple">Passé simple 💚</td><td>Ponctuel, successions</td><td>Il <span class="passe-simple">ouvrit</span> la porte.</td></tr>
+          <tr><td class="plus-que-parfait">Plus-que-parfait 🟧</td><td>Antériorité</td><td>Elle <span class="plus-que-parfait">avait rangé</span> ses affaires.</td></tr>
         </tbody>
       </table>
     </section>
 
     <!-- QCM -->
     <section id="qcm" class="card">
-      <h2>❓ QCM — 30 questions (1 verbe = 1 analyse)</h2>
-      <p class="legend">Légende (rappel dans chaque question) : 🌸 <span class="imparfait">Imparfait</span> · 💚 <span class="passe-simple">Passé simple</span> · 🟧 <span class="plus-que-parfait">Plus-que-parfait</span></p>
+      <h2>❓ QCM — 30 questions (alternance 🌸 / 💚 / 🟧)</h2>
+      <p class="legend">Légende rappelée dans chaque carte : 🌸 Imparfait · 💚 Passé simple · 🟧 Plus-que-parfait</p>
 
       <div class="qcm-controls">
-        <label>Filtrer :
+        <label>Filtrer
           <select id="filter">
             <option value="all">Toutes</option>
             <option value="imparfait">Imparfait (🌸)</option>
@@ -160,429 +78,38 @@
             <option value="plus-que-parfait">Plus-que-parfait (🟧)</option>
           </select>
         </label>
-        <button id="shuffle">Mélanger</button>
+        <label>Ordre
+          <select id="order">
+            <option value="alternated">Alterné (par défaut)</option>
+            <option value="as-is">Données (tel quel)</option>
+            <option value="random">Aléatoire</option>
+          </select>
+        </label>
         <button id="reset" class="secondary">Réinitialiser</button>
-        <div class="progress" style="margin-left:auto">
+        <div class="progress">
           <span id="scoreTxt">Score : 0 / 30</span>
           <div class="bar"><span id="barFill"></span></div>
         </div>
       </div>
 
-      <div id="qcmContainer"></div>
+      <div id="qcmContainer" aria-live="polite"></div>
     </section>
 
     <!-- ECRITURE -->
     <section id="ecriture" class="card">
       <h2>✍️ Exercices d’écriture (avec exemples)</h2>
-
-      <div class="card" style="box-shadow:none">
-        <h3>1) Souvenir de vacances (5–6 lignes)</h3>
-        <p>Utilise : 2 imparfaits (décor/habitude) + 2 passés simples (actions principales).</p>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('ex1')">Voir un exemple</button>
-          <button class="btn secondary" onclick="copyEx('ex1')">Copier l’exemple</button>
-        </div>
-        <div id="ex1" class="exemple">
-          Il <span class="imparfait">faisait</span> très doux et la mer <span class="imparfait">miroitait</span>.
-          Nous <span class="passe-simple">marchâmes</span> longtemps sur la jetée, puis
-          un goéland <span class="passe-simple">plongea</span> brusquement près de nous.
-        </div>
-      </div>
-
-      <div class="card" style="box-shadow:none">
-        <h3>2) Scène de classe (6 lignes)</h3>
-        <p>3 imparfaits + 2 passés simples + 1 plus-que-parfait (antériorité).</p>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('ex2')">Voir un exemple</button>
-          <button class="btn secondary" onclick="copyEx('ex2')">Copier l’exemple</button>
-        </div>
-        <div id="ex2" class="exemple">
-          La salle <span class="imparfait">était</span> silencieuse, chacun <span class="imparfait">écrivait</span>.
-          J’<span class="plus-que-parfait">avais terminé</span> quand le professeur <span class="passe-simple">interrogea</span> Luc ;
-          je <span class="passe-simple">levai</span> la main pendant que la pluie <span class="imparfait">crépitait</span> dehors.
-        </div>
-      </div>
-
-      <div class="card" style="box-shadow:none">
-        <h3>3) Petit récit fantastique (6–8 lignes)</h3>
-        <p>Au moins 3 temps différents (🌸 💚 🟧).</p>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('ex3')">Voir un exemple</button>
-          <button class="btn secondary" onclick="copyEx('ex3')">Copier l’exemple</button>
-        </div>
-        <div id="ex3" class="exemple">
-          Il <span class="imparfait">faisait</span> nuit quand une lueur <span class="passe-simple">apparut</span> au grenier.
-          Je <span class="plus-que-parfait">n’avais jamais vu</span> pareille clarté ;
-          la porte <span class="passe-simple">grinça</span> et un souffle <span class="imparfait">passait</span> derrière moi.
-        </div>
-      </div>
-
-      <div class="card" style="box-shadow:none">
-        <h3>4) Journal de bord (5 lignes)</h3>
-        <p>Alterne décor (imparfait) et actions principales (passé simple).</p>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('ex4')">Voir un exemple</button>
-          <button class="btn secondary" onclick="copyEx('ex4')">Copier l’exemple</button>
-        </div>
-        <div id="ex4" class="exemple">
-          Le quai <span class="imparfait">était</span> désert ; soudain, le train <span class="passe-simple">entra</span> en gare.
-          Je <span class="passe-simple">montai</span> d’un pas décidé tandis que le vent <span class="imparfait">soufflait</span>.
-        </div>
-      </div>
-
-      <div class="card" style="box-shadow:none">
-        <h3>5) Fait divers (6 lignes)</h3>
-        <p>Imparfait (contexte) + Passé simple (événement) + Plus-que-parfait (cause antérieure).</p>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('ex5')">Voir un exemple</button>
-          <button class="btn secondary" onclick="copyEx('ex5')">Copier l’exemple</button>
-        </div>
-        <div id="ex5" class="exemple">
-          Il <span class="imparfait">faisait</span> encore nuit quand l’accident <span class="passe-simple">survint</span>.
-          Le conducteur <span class="plus-que-parfait">avait freiné</span> trop tard : la chaussée <span class="imparfait">glissait</span>.
-        </div>
-      </div>
+      <div id="ecritureContainer"></div>
     </section>
 
     <!-- TRANSFORMATION -->
     <section id="transfo" class="card">
-      <h2>🔄 Transformation — du présent au passé</h2>
-
-      <div class="card" style="box-shadow:none">
-        <h3>Texte 1</h3>
-        <blockquote>
-          Aujourd’hui, la rue est calme et les enfants jouent. Je vois Paul et nous parlons devant la librairie.
-        </blockquote>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('t1')">Voir une correction possible</button>
-        </div>
-        <div id="t1" class="exemple">
-          Ce jour-là, la rue <span class="imparfait">était</span> calme et les enfants <span class="imparfait">jouaient</span>.
-          Je <span class="passe-simple">vis</span> Paul et nous <span class="passe-simple">parlâmes</span> devant la librairie.
-        </div>
-      </div>
-
-      <div class="card" style="box-shadow:none">
-        <h3>Texte 2 (avec antériorité)</h3>
-        <blockquote>
-          Il arrive, regarde sa montre et sourit : il a déjà terminé son rapport.
-        </blockquote>
-        <div class="actions">
-          <button class="btn" onclick="toggleEx('t2')">Voir une correction possible</button>
-        </div>
-        <div id="t2" class="exemple">
-          Il <span class="passe-simple">arriva</span>, <span class="passe-simple">regarda</span> sa montre et <span class="passe-simple">sourit</span> :
-          il <span class="plus-que-parfait">avait déjà terminé</span> son rapport
-          <span style="color:#64748b">— formation : avait (imparfait) + terminé (participe) → action <em>achevée avant</em> l’arrivée.</span>
-        </div>
-      </div>
+      <h2>🔄 Transformations — du présent au passé (20)</h2>
+      <div id="transfoContainer"></div>
     </section>
-
   </main>
 
-  <footer>Fiche & exercices — 4e • Code couleur : 🌸 Imparfait · 💚 Passé simple · 🟧 Plus-que-parfait</footer>
+  <footer>Code couleur : 🌸 Imparfait · 💚 Passé simple · 🟧 Plus-que-parfait</footer>
 
-<script>
-/* ------------------- Navigation douce ------------------- */
-document.querySelectorAll('nav button').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const sel = btn.getAttribute('data-go');
-    document.querySelector(sel).scrollIntoView({behavior:'smooth', block:'start'});
-  });
-});
-
-/* ------------------- Aide affichage exemples ------------------- */
-function toggleEx(id){
-  const el = document.getElementById(id);
-  el.style.display = (el.style.display==='block') ? 'none' : 'block';
-}
-function copyEx(id){
-  const el = document.getElementById(id);
-  const tmp = el.innerText.replace(/\s+\n/g,'\n').trim();
-  navigator.clipboard.writeText(tmp);
-}
-
-/* ------------------- Banque QCM (30) ------------------- */
-/* Règle : 1 verbe ciblé par question. Tenues: 'imparfait' | 'passe-simple' | 'plus-que-parfait' */
-const QUESTIONS = [
-  /* IMPARFAIT (10) */
-  { tense:'imparfait',
-    q:`Il <span class="imparfait">faisait</span> très froid ce matin-là.`,
-    options:["description/décor","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = décor/description durable. On installe l’arrière-plan de la scène."
-  },
-  { tense:'imparfait',
-    q:`Ils <span class="imparfait">jouaient</span> souvent au parc après l’école.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = habitude (indice: « souvent »)."
-  },
-  { tense:'imparfait',
-    q:`La rue <span class="imparfait">était</span> déserte.`,
-    options:["description/décor","actions successives","antériorité"],
-    correct:0,
-    feedback:"Imparfait décrit un état de fond (arrière-plan)."
-  },
-  { tense:'imparfait',
-    q:`Le vent <span class="imparfait">soufflait</span> dans les arbres.`,
-    options:["description/décor","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = description continue du cadre."
-  },
-  { tense:'imparfait',
-    q:`Je <span class="imparfait">lisais</span> tranquillement quand on frappa.`,
-    options:["action de fond/en cours","action principale ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = action en cours sur laquelle se greffe un événement."
-  },
-  { tense:'imparfait',
-    q:`Nous <span class="imparfait">allions</span> chaque dimanche au marché.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = habitude (fréquence régulière)."
-  },
-  { tense:'imparfait',
-    q:`La maison <span class="imparfait">semblait</span> abandonnée.`,
-    options:["description/décor","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = description/état prolongé."
-  },
-  { tense:'imparfait',
-    q:`Elle <span class="imparfait">portait</span> toujours une écharpe rouge.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = habitude (indice: « toujours »)."
-  },
-  { tense:'imparfait',
-    q:`Il <span class="imparfait">marchait</span> près de la rivière.`,
-    options:["action de fond/en cours","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = action en cours, non bornée."
-  },
-  { tense:'imparfait',
-    q:`Les enfants <span class="imparfait">riaient</span> dans la cour.`,
-    options:["arrière-plan/description","action ponctuelle","antériorité"],
-    correct:0,
-    feedback:"Imparfait = ambiance/activité de fond."
-  },
-
-  /* PASSE SIMPLE (10) */
-  { tense:'passe-simple',
-    q:`Il <span class="passe-simple">entra</span> sans frapper.`,
-    options:["description/décor","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = action ponctuelle qui fait avancer le récit."
-  },
-  { tense:'passe-simple',
-    q:`La porte <span class="passe-simple">claqua</span> violemment.`,
-    options:["habitude","action brève","antériorité"],
-    correct:1,
-    feedback:"Passé simple = action brève/soudaine."
-  },
-  { tense:'passe-simple',
-    q:`Ils <span class="passe-simple">partirent</span> à l’aube.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = action bornée (événement)."
-  },
-  { tense:'passe-simple',
-    q:`Je <span class="passe-simple">vis</span> un éclair au loin.`,
-    options:["description/décor","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = perception ponctuelle."
-  },
-  { tense:'passe-simple',
-    q:`Il <span class="passe-simple">prit</span> son sac.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = action isolée, première du enchaînement."
-  },
-  { tense:'passe-simple',
-    q:`Elle <span class="passe-simple">écrivit</span> quelques lignes.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = fait ponctuel déterminé."
-  },
-  { tense:'passe-simple',
-    q:`Ils <span class="passe-simple">firent</span> leurs devoirs puis <span class="passe-simple">s’endormirent</span>.`,
-    options:["actions successives","habitude","antériorité"],
-    correct:0,
-    feedback:"Passé simple = chaîne d’actions successives (premier plan)."
-  },
-  { tense:'passe-simple',
-    q:`Il <span class="passe-simple">ouvrit</span> la fenêtre.`,
-    options:["description/décor","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = événement bref, décisif."
-  },
-  { tense:'passe-simple',
-    q:`Je <span class="passe-simple">compris</span> aussitôt.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = prise de conscience instantanée."
-  },
-  { tense:'passe-simple',
-    q:`Elle <span class="passe-simple">s’enfuit</span> dans la nuit.`,
-    options:["habitude","action ponctuelle","antériorité"],
-    correct:1,
-    feedback:"Passé simple = action unique/ponctuelle."
-  },
-
-  /* PLUS-QUE-PARFAIT (10) — feedback détaillé */
-  { tense:'plus-que-parfait',
-    q:`Elle <span class="plus-que-parfait">avait déjà mangé</span>.`,
-    options:["habitude","antériorité (déjà avant)","description"],
-    correct:1,
-    feedback:"Plus-que-parfait = <em>avoir</em> à l’imparfait (avait) + participe (mangé). L’action était <strong>déjà achevée</strong> avant une autre action passée (explicite ou implicite)."
-  },
-  { tense:'plus-que-parfait',
-    q:`Il <span class="plus-que-parfait">avait rangé</span> ses affaires.`,
-    options:["description","antériorité (déjà avant)","action ponctuelle au premier plan"],
-    correct:1,
-    feedback:"Plus-que-parfait = antériorité : le rangement est terminé <em>avant</em> l’événement principal."
-  },
-  { tense:'plus-que-parfait',
-    q:`Elle <span class="plus-que-parfait">était partie</span> tôt.`,
-    options:["habitude","antériorité (déjà avant)","description"],
-    correct:1,
-    feedback:"Plus-que-parfait avec <em>être</em> (était + participe) → action <strong>achevée antérieure</strong> (accord possible du participe)."
-  },
-  { tense:'plus-que-parfait',
-    q:`Nous <span class="plus-que-parfait">avions lu</span> le livre.`,
-    options:["description","antériorité (déjà avant)","action ponctuelle au premier plan"],
-    correct:1,
-    feedback:"Plus-que-parfait = repère antérieur : la lecture est terminée avant l’autre passé."
-  },
-  { tense:'plus-que-parfait',
-    q:`Il <span class="plus-que-parfait">avait terminé</span> son rapport.`,
-    options:["description","antériorité (déjà avant)","habitude"],
-    correct:1,
-    feedback:"Formation : <em>avait</em> (imparfait) + <em>terminé</em> (participe). Valeur : <strong>déjà fait</strong> avant l’événement suivant."
-  },
-  { tense:'plus-que-parfait',
-    q:`On <span class="plus-que-parfait">avait posé</span> les valises.`,
-    options:["description","antériorité (déjà avant)","action ponctuelle au premier plan"],
-    correct:1,
-    feedback:"Plus-que-parfait = action accomplie antérieurement (valise déjà posée quand la suite du récit arrive)."
-  },
-  { tense:'plus-que-parfait',
-    q:`Ils <span class="plus-que-parfait">avaient compris</span> la règle.`,
-    options:["habitude","antériorité (déjà avant)","description"],
-    correct:1,
-    feedback:"Plus-que-parfait = résultat acquis avant une autre action passée (ils comprennent <em>déjà</em>)."
-  },
-  { tense:'plus-que-parfait',
-    q:`Elle <span class="plus-que-parfait">était née</span> en hiver.`,
-    options:["description","antériorité (repère biographique)","action ponctuelle au premier plan"],
-    correct:1,
-    feedback:"Avec <em>être</em> : « était née ». Repère antérieur stable dans le passé."
-  },
-  { tense:'plus-que-parfait',
-    q:`Il <span class="plus-que-parfait">avait écrit</span> la lettre.`,
-    options:["description","antériorité (déjà avant)","habitude"],
-    correct:1,
-    feedback:"Plus-que-parfait = l’écriture est déjà achevée avant une autre action (ex. l’envoi, l’arrivée)."
-  },
-  { tense:'plus-que-parfait',
-    q:`La gardienne <span class="plus-que-parfait">avait fermé</span> la porte.`,
-    options:["description","antériorité (déjà avant)","action au premier plan"],
-    correct:1,
-    feedback:"Formation : <em>avait</em> + <em>fermé</em>. Valeur : état résultant acquis avant l’événement principal (porte déjà close)."
-  }
-];
-
-/* ------------------- Construction UI QCM ------------------- */
-const cont = document.getElementById('qcmContainer');
-let order = [...QUESTIONS.keys()];
-let answered = Array(QUESTIONS.length).fill(null); // true/false/null
-
-function smallLegend(){
-  return `<div class="q-legend">🌸 <span class="imparfait">Imparfait</span> · 💚 <span class="passe-simple">Passé simple</span> · 🟧 <span class="plus-que-parfait">Plus-que-parfait</span></div>`;
-}
-
-function render(filter='all'){
-  cont.innerHTML = '';
-  const list = order
-    .map(i => ({...QUESTIONS[i], idx:i}))
-    .filter(it => filter==='all' ? true : it.tense===filter);
-
-  list.forEach((item, k) =>{
-    const card = document.createElement('div');
-    card.className = 'qcm-question';
-    const num = k+1;
-    card.innerHTML = `
-      <div class="q-title">Q${num}. ${item.q}</div>
-      ${smallLegend()}
-      <div class="q-options">
-        ${item.options.map((opt,i)=>`
-          <button class="q-option" data-i="${item.idx}" data-choice="${i}">
-            ${String.fromCharCode(97+i)}) ${opt}
-          </button>`).join('')}
-      </div>
-      <div class="feedback" id="fb-${item.idx}" style="display:none"></div>
-    `;
-    cont.appendChild(card);
-  });
-
-  // Attach handlers
-  cont.querySelectorAll('.q-option').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const qi = Number(btn.getAttribute('data-i'));
-      const choice = Number(btn.getAttribute('data-choice'));
-      const qBlock = btn.closest('.qcm-question');
-      const all = qBlock.querySelectorAll('.q-option');
-      all.forEach(b=>b.classList.remove('correct','incorrect'));
-      const fb = document.getElementById(`fb-${qi}`);
-      fb.style.display='block';
-
-      if(choice === QUESTIONS[qi].correct){
-        btn.classList.add('correct');
-        answered[qi] = true;
-        fb.innerHTML = `✅ ${QUESTIONS[qi].feedback}`;
-      } else {
-        btn.classList.add('incorrect');
-        // show correct one within this block (same label text)
-        all[QUESTIONS[qi].correct].classList.add('correct');
-        answered[qi] = false;
-        fb.innerHTML = `❌ Mauvais choix.<br>${QUESTIONS[qi].feedback}`;
-      }
-      updateScore();
-    });
-  });
-
-  updateScore();
-}
-
-function updateScore(){
-  const done = answered.filter(v => v!==null).length;
-  const good = answered.filter(v => v===true).length;
-  document.getElementById('scoreTxt').textContent = `Score : ${good} / ${QUESTIONS.length}`;
-  const bar = document.getElementById('barFill');
-  bar.style.width = `${(good/QUESTIONS.length)*100}%`;
-}
-
-document.getElementById('filter').addEventListener('change', e=>{
-  render(e.target.value);
-});
-document.getElementById('shuffle').addEventListener('click', ()=>{
-  // Fisher–Yates
-  for(let i=order.length-1;i>0;i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [order[i],order[j]] = [order[j],order[i]];
-  }
-  render(document.getElementById('filter').value);
-});
-document.getElementById('reset').addEventListener('click', ()=>{
-  answered = Array(QUESTIONS.length).fill(null);
-  order = [...QUESTIONS.keys()];
-  document.getElementById('filter').value='all';
-  render('all');
-});
-
-render('all');
-</script>
+  <script src="app.js" defer></script>
 </body>
 </html>

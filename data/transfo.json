@@ -1,1 +1,65 @@
+{
+  "items": [
+    { "present": "Aujourd’hui, la rue est calme et les enfants jouent. Je vois Paul et nous parlons devant la librairie.",
+      "correction_html": "Ce jour-là, la rue <span class='imparfait'>était</span> calme et les enfants <span class='imparfait'>jouaient</span>. Je <span class='passe-simple'>vis</span> Paul et nous <span class='passe-simple'>parlâmes</span> devant la librairie."
+    },
+    { "present": "Il arrive, regarde sa montre et sourit : il a déjà terminé son rapport.",
+      "correction_html": "Il <span class='passe-simple'>arriva</span>, <span class='passe-simple'>regarda</span> sa montre et <span class='passe-simple'>sourit</span> : il <span class='plus-que-parfait'>avait déjà terminé</span> son rapport."
+    },
+    { "present": "Le vent souffle et la mer se forme. Soudain, un bateau apparaît.",
+      "correction_html": "Le vent <span class='imparfait'>soufflait</span> et la mer <span class='imparfait'>se formait</span>. Soudain, un bateau <span class='passe-simple'>apparut</span>."
+    },
+    { "present": "Je marche dans la forêt, j’entends un bruit et je me cache.",
+      "correction_html": "Je <span class='imparfait'>marchais</span> dans la forêt, j’<span class='passe-simple'>entendis</span> un bruit et je me <span class='passe-simple'>cachai</span>."
+    },
+    { "present": "Nous ouvrons la fenêtre, l’air entre et nous rions.",
+      "correction_html": "Nous <span class='passe-simple'>ouvrîmes</span> la fenêtre, l’air <span class='passe-simple'>entra</span> et nous <span class='passe-simple'>rîmes</span>."
+    },
+    { "present": "Elle prépare le dîner puis elle sert la table. Elle a déjà épluché les légumes.",
+      "correction_html": "Elle <span class='passe-simple'>prépara</span> le dîner puis <span class='passe-simple'>servit</span> la table. Elle <span class='plus-que-parfait'>avait déjà épluché</span> les légumes."
+    },
+    { "present": "Les enfants chuchotent et regardent le couloir. Le directeur entre.",
+      "correction_html": "Les enfants <span class='imparfait'>chuchotaient</span> et <span class='imparfait'>regardaient</span> le couloir. Le directeur <span class='passe-simple'>entra</span>."
+    },
+    { "present": "Je prends mon sac, je sors et je téléphone. J’ai déjà noté le rendez-vous.",
+      "correction_html": "Je <span class='passe-simple'>pris</span> mon sac, je <span class='passe-simple'>sortis</span> et je <span class='passe-simple'>téléphonai</span>. J’<span class='plus-que-parfait'>avais déjà noté</span> le rendez-vous."
+    },
+    { "present": "Il traverse la rue, entend un cri et court vers la place.",
+      "correction_html": "Il <span class='passe-simple'>traversa</span> la rue, <span class='passe-simple'>entendit</span> un cri et <span class='passe-simple'>courut</span> vers la place."
+    },
+    { "present": "La pluie tombe, les feux brillent et la ville s’illumine.",
+      "correction_html": "La pluie <span class='imparfait'>tombait</span>, les feux <span class='imparfait'>brillaient</span> et la ville <span class='imparfait'>s’illuminait</span>."
+    },
+    { "present": "Je vois la montagne, je pense à mon enfance et j’écris quelques lignes.",
+      "correction_html": "Je <span class='passe-simple'>vis</span> la montagne, je <span class='passe-simple'>pensai</span> à mon enfance et j’<span class='passe-simple'>écrivis</span> quelques lignes."
+    },
+    { "present": "Elle parle doucement, cherche ses clés et sourit. Elle a déjà fermé les volets.",
+      "correction_html": "Elle <span class='imparfait'>parlait</span> doucement, <span class='imparfait'>cherchait</span> ses clés et <span class='imparfait'>souriait</span>. Elle <span class='plus-que-parfait'>avait déjà fermé</span> les volets."
+    },
+    { "present": "Nous discutons, la cloche sonne et nous entrons en classe.",
+      "correction_html": "Nous <span class='imparfait'>discutions</span> quand la cloche <span class='passe-simple'>sonna</span>, et nous <span class='passe-simple'>entrâmes</span> en classe."
+    },
+    { "present": "Il se réveille, regarde l’heure et se lève d’un bond.",
+      "correction_html": "Il se <span class='passe-simple'>réveilla</span>, <span class='passe-simple'>regarda</span> l’heure et se <span class='passe-simple'>leva</span> d’un bond."
+    },
+    { "present": "Je rentre, je pose mes affaires et je bois un verre d’eau.",
+      "correction_html": "Je <span class='passe-simple'>rentr(ai)</span>, je <span class='passe-simple'>posai</span> mes affaires et je <span class='passe-simple'>bus</span> un verre d’eau."
+    },
+    { "present": "Ils arrivent déjà calmes : ils ont terminé la dispute avant de venir.",
+      "correction_html": "Ils <span class='passe-simple'>arrivèrent</span> déjà calmes : ils <span class='plus-que-parfait'>avaient terminé</span> la dispute avant de venir."
+    },
+    { "present": "La neige tombe et recouvre les toits. Les passants regardent en silence.",
+      "correction_html": "La neige <span class='imparfait'>tombait</span> et <span class='imparfait'>recouvrait</span> les toits. Les passants <span class='imparfait'>regardaient</span> en silence."
+    },
+    { "present": "Je ferme l’ordinateur, j’éteins la lumière et je sors doucement.",
+      "correction_html": "Je <span class='passe-simple'>fermai</span> l’ordinateur, j’<span class='passe-simple'>éteignis</span> la lumière et je <span class='passe-simple'>sortis</span> doucement."
+    },
+    { "present": "Elle écrit une note, colle l’étiquette et sourit : elle a déjà rangé les dossiers.",
+      "correction_html": "Elle <span class='passe-simple'>écrivit</span> une note, <span class='passe-simple'>colla</span> l’étiquette et <span class='passe-simple'>sourit</span> : elle <span class='plus-que-parfait'>avait déjà rangé</span> les dossiers."
+    },
+    { "present": "Nous regardons la carte, choisissons une route et partons.",
+      "correction_html": "Nous <span class='passe-simple'>regardâmes</span> la carte, <span class='passe-simple'>choisîmes</span> une route et <span class='passe-simple'>partîmes</span>."
+    }
+  ]
+}
 

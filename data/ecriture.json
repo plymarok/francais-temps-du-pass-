@@ -1,1 +1,45 @@
+{
+  "exercices": [
+    {
+      "title": "Souvenir de vacances (5–6 lignes)",
+      "consigne": "Utilise 2 imparfaits (décor/habitude) + 2 passés simples (actions principales).",
+      "example_html": "Il <span class='imparfait'>faisait</span> très doux et la mer <span class='imparfait'>miroitait</span>.<br>Nous <span class='passe-simple'>marchâmes</span> longtemps sur la jetée, puis un goéland <span class='passe-simple'>plongea</span> près de nous."
+    },
+    {
+      "title": "Scène de classe (6 lignes)",
+      "consigne": "3 imparfaits + 2 passés simples + 1 plus-que-parfait (antériorité).",
+      "example_html": "La salle <span class='imparfait'>était</span> silencieuse, chacun <span class='imparfait'>écrivait</span>.<br>J’<span class='plus-que-parfait'>avais terminé</span> quand le professeur <span class='passe-simple'>interrogea</span> Luc ; je <span class='passe-simple'>levai</span> la main tandis que la pluie <span class='imparfait'>crépitait</span>."
+    },
+    {
+      "title": "Récit fantastique (6–8 lignes)",
+      "consigne": "Mêle au moins 3 temps (🌸 💚 🟧) pour créer un effet d’étrangeté.",
+      "example_html": "Il <span class='imparfait'>faisait</span> nuit quand une lueur <span class='passe-simple'>apparut</span> au grenier.<br>Je <span class='plus-que-parfait'>n’avais jamais vu</span> pareille clarté ; la porte <span class='passe-simple'>grinça</span> et un souffle <span class='imparfait'>passait</span> derrière moi."
+    },
+    {
+      "title": "Journal de bord (5 lignes)",
+      "consigne": "Alterne décor (imparfait) et actions (passé simple).",
+      "example_html": "Le quai <span class='imparfait'>était</span> désert ; soudain, le train <span class='passe-simple'>entra</span> en gare.<br>Je <span class='passe-simple'>montai</span> d’un pas décidé tandis que le vent <span class='imparfait'>soufflait</span>."
+    },
+    {
+      "title": "Fait divers (6 lignes)",
+      "consigne": "Imparfait (contexte) + Passé simple (événement) + Plus-que-parfait (cause antérieure).",
+      "example_html": "Il <span class='imparfait'>faisait</span> encore nuit quand l’accident <span class='passe-simple'>survint</span>.<br>Le conducteur <span class='plus-que-parfait'>avait freiné</span> trop tard : la chaussée <span class='imparfait'>glissait</span>."
+    },
+    {
+      "title": "Souvenir familial (6–7 lignes)",
+      "consigne": "Insiste sur l’habitude (imparfait) et place 1 plus-que-parfait pour une action déjà faite.",
+      "example_html": "Chaque dimanche, grand-père <span class='imparfait'>racontait</span> la même histoire ; nous <span class='imparfait'>riions</span> déjà.<br>Ce jour-là, il <span class='plus-que-parfait'>avait préparé</span> une surprise, puis il <span class='passe-simple'>sortit</span> un vieux carnet."
+    },
+    {
+      "title": "Portrait en mouvement (5–6 lignes)",
+      "consigne": "Décris au fond (imparfait) et déclenche une action (passé simple).",
+      "example_html": "Elle <span class='imparfait'>portait</span> toujours une écharpe rouge et <span class='imparfait'>marchait</span> vite.<br>À l’angle, elle <span class='passe-simple'>accéléra</span> soudain et <span class='passe-simple'>disparut</span>."
+    },
+    {
+      "title": "Retour de voyage (6 lignes)",
+      "consigne": "Place un plus-que-parfait signifiant « déjà avant ». ",
+      "example_html": "Le soir tombait et la gare <span class='imparfait'>bruissait</span> ; nous <span class='passe-simple'>arrivâmes</span> épuisés.<br>Heureusement, j’<span class='plus-que-parfait'>avais réservé</span> une chambre : le réceptionniste <span class='passe-simple'>nous accueillit</span> aussitôt."
+    }
+  ]
+}
 

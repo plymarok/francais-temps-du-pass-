@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Révisions — Valeurs des temps du passé</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    header {
+      background: #38bdf8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 30px;
+      color: #0f172a;
+    }
+    .imparfait { color: deeppink; font-weight: bold; }
+    .passe-simple { color: green; font-weight: bold; }
+    .plus-que-parfait { color: purple; font-weight: bold; }
+    .qcm-question {
+      margin: 15px 0;
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+    .qcm-option {
+      display: block;
+      margin: 6px 0;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid #cbd5e1;
+      transition: background 0.2s;
+    }
+    .qcm-option:hover { background: #f1f5f9; }
+    .correct { background: #bbf7d0 !important; }
+    .incorrect { background: #fecaca !important; }
+    .exemple {
+      background: #f1f5f9;
+      padding: 10px;
+      border-left: 4px solid #38bdf8;
+      margin-top: 8px;
+      display: none;
+    }
+    button {
+      background: #38bdf8;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #0ea5e9; }
+  </style>
+</head>
+<body>
+  <header>Révisions — Les valeurs des temps du passé</header>
+  <main>
+    <h2>📖 Le cours</h2>
+    <p><span class="imparfait">Imparfait</span> → décor, habitude, action de fond.<br>
+       <span class="passe-simple">Passé simple</span> → actions principales, successives.<br>
+       <span class="plus-que-parfait">Plus-que-parfait</span> → action antérieure.</p>
+
+    <p>Exemple :  
+      Il <span class="imparfait">faisait</span> chaud et les enfants <span class="imparfait">jouaient</span>.  
+      Soudain, un orage <span class="passe-simple">éclata</span>.  
+      Elle <span class="plus-que-parfait">avait préparé</span> ses affaires avant qu’il <span class="passe-simple">arrive</span>.
+    </p>
+
+    <h2>❓ QCM</h2>
+    <div class="qcm-question" data-correct="b">
+      Dans « Il <span class="imparfait">marchait</span> chaque soir jusqu’à la rivière », l’imparfait exprime :
+      <span class="qcm-option" data-letter="a">a) description</span>
+      <span class="qcm-option" data-letter="b">b) habitude</span>
+      <span class="qcm-option" data-letter="c">c) action brève</span>
+    </div>
+    <div class="qcm-question" data-correct="b">
+      Dans « Elle <span class="passe-simple">prit</span> son sac et <span class="passe-simple">sortit</span> », le passé simple exprime :
+      <span class="qcm-option" data-letter="a">a) habitude</span>
+      <span class="qcm-option" data-letter="b">b) actions successives</span>
+      <span class="qcm-option" data-letter="c">c) décor</span>
+    </div>
+
+    <h2>✍️ Exercices d’écriture</h2>
+    <p><b>1. Souvenir de vacances</b> — Écris 5 lignes avec 2 imparfaits et 2 passés simples.</p>
+    <button onclick="toggleExemple('ex1')">Voir un exemple</button>
+    <div id="ex1" class="exemple">
+      Il <span class="imparfait">faisait</span> chaud et la mer <span class="imparfait">brillait</span>.  
+      Nous <span class="passe-simple">jouâmes</span> longtemps sur le sable.  
+      Soudain, une vague <span class="passe-simple">emporta</span> nos serviettes.
+    </div>
+
+    <p><b>2. Scène de classe</b> — 3 imparfaits, 2 passés simples, 1 plus-que-parfait.</p>
+    <button onclick="toggleExemple('ex2')">Voir un exemple</button>
+    <div id="ex2" class="exemple">
+      La salle <span class="imparfait">était</span> silencieuse et chacun <span class="imparfait">travaillait</span>.  
+      J’<span class="plus-que-parfait">avais fini</span> mon exercice quand le professeur <span class="passe-simple">demanda</span> la correction.  
+      Je <span class="passe-simple">lus</span> alors mon texte.
+    </div>
+
+    <p><b>3. Petit récit fantastique</b> — Utilise au moins 3 temps du passé.</p>
+    <button onclick="toggleExemple('ex3')">Voir un exemple</button>
+    <div id="ex3" class="exemple">
+      Il <span class="imparfait">faisait</span> nuit noire quand une lumière <span class="passe-simple">apparut</span>.  
+      Je <span class="plus-que-parfait">n’avais jamais vu</span> une telle clarté auparavant.  
+      La porte <span class="passe-simple">s’ouvrit</span> lentement et je <span class="passe-simple">m’enfuis</span>.
+    </div>
+  </main>
+
+  <script>
+    // Gestion QCM
+    document.querySelectorAll('.qcm-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        const parent = opt.closest('.qcm-question');
+        const correct = parent.dataset.correct;
+        parent.querySelectorAll('.qcm-option').forEach(o => {
+          o.classList.remove('correct', 'incorrect');
+          if (o.dataset.letter === correct) o.classList.add('correct');
+          else if (o === opt) o.classList.add('incorrect');
+        });
+      });
+    });
+    // Gestion exemples
+    function toggleExemple(id) {
+      const ex = document.getElementById(id);
+      ex.style.display = (ex.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

@@ -28,10 +28,18 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    h2 {
-      margin-top: 30px;
-      color: #0f172a;
+    h2 { margin-top: 30px; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
     }
+    th, td {
+      border: 1px solid #e2e8f0;
+      padding: 8px;
+      text-align: left;
+    }
+    th { background: #f1f5f9; }
     .imparfait { color: deeppink; font-weight: bold; }
     .passe-simple { color: green; font-weight: bold; }
     .plus-que-parfait { color: purple; font-weight: bold; }
@@ -83,85 +91,107 @@
   <header>Révisions — Les valeurs des temps du passé</header>
   <main>
     <h2>📖 Le cours</h2>
-    <p><span class="imparfait">Imparfait</span> → décor, habitude, action de fond.<br>
-       <span class="passe-simple">Passé simple</span> → actions principales, successives.<br>
-       <span class="plus-que-parfait">Plus-que-parfait</span> → action antérieure.</p>
+    <p>🌸 <span class="imparfait">Imparfait</span> : décor, habitude, action de fond.<br>
+       💚 <span class="passe-simple">Passé simple</span> : actions principales, successives.<br>
+       💜 <span class="plus-que-parfait">Plus-que-parfait</span> : action antérieure.</p>
 
-    <p>Exemple :  
-      Il <span class="imparfait">faisait</span> chaud et les enfants <span class="imparfait">jouaient</span>.  
-      Soudain, un orage <span class="passe-simple">éclata</span>.  
-      Elle <span class="plus-que-parfait">avait préparé</span> ses affaires avant qu’il <span class="passe-simple">arrive</span>.
-    </p>
+    <table>
+      <tr><th>Temps</th><th>Valeurs</th><th>Exemple</th></tr>
+      <tr><td><span class="imparfait">Imparfait</span></td><td>Description, habitude, action en cours</td><td>Il <span class="imparfait">faisait</span> beau.</td></tr>
+      <tr><td><span class="passe-simple">Passé simple</span></td><td>Actions ponctuelles, successives</td><td>Il <span class="passe-simple">entra</span> dans la salle.</td></tr>
+      <tr><td><span class="plus-que-parfait">Plus-que-parfait</span></td><td>Antériorité</td><td>Il <span class="plus-que-parfait">avait rangé</span> son sac avant de partir.</td></tr>
+    </table>
 
-    <h2>❓ QCM (20 questions)</h2>
+    <h2>❓ QCM (30 questions)</h2>
     <div id="qcm-container"></div>
     <button onclick="showScore()">Voir mon score</button>
     <div id="result"></div>
 
     <h2>✍️ Exercices d’écriture</h2>
-    <p><b>1. Souvenir de vacances</b> — Écris 5 lignes avec 2 imparfaits et 2 passés simples.</p>
+    <p><b>1. Souvenir de vacances</b></p>
     <button onclick="toggleExemple('ex1')">Voir un exemple</button>
     <div id="ex1" class="exemple">
       Il <span class="imparfait">faisait</span> chaud et la mer <span class="imparfait">brillait</span>.  
-      Nous <span class="passe-simple">jouâmes</span> longtemps sur le sable.  
+      Nous <span class="passe-simple">jouâmes</span> longtemps.  
       Soudain, une vague <span class="passe-simple">emporta</span> nos serviettes.
     </div>
 
-    <p><b>2. Scène de classe</b> — 3 imparfaits, 2 passés simples, 1 plus-que-parfait.</p>
+    <p><b>2. Scène de classe</b></p>
     <button onclick="toggleExemple('ex2')">Voir un exemple</button>
     <div id="ex2" class="exemple">
       La salle <span class="imparfait">était</span> silencieuse et chacun <span class="imparfait">travaillait</span>.  
-      J’<span class="plus-que-parfait">avais fini</span> mon exercice quand le professeur <span class="passe-simple">demanda</span> la correction.  
+      J’<span class="plus-que-parfait">avais fini</span> mon exercice quand le professeur <span class="passe-simple">demanda</span>.  
       Je <span class="passe-simple">lus</span> alors mon texte.
     </div>
 
-    <p><b>3. Petit récit fantastique</b> — Utilise au moins 3 temps du passé.</p>
+    <p><b>3. Petit récit fantastique</b></p>
     <button onclick="toggleExemple('ex3')">Voir un exemple</button>
     <div id="ex3" class="exemple">
-      Il <span class="imparfait">faisait</span> nuit noire quand une lumière <span class="passe-simple">apparut</span>.  
-      Je <span class="plus-que-parfait">n’avais jamais vu</span> une telle clarté auparavant.  
-      La porte <span class="passe-simple">s’ouvrit</span> lentement et je <span class="passe-simple">m’enfuis</span>.
+      Il <span class="imparfait">faisait</span> nuit quand une lumière <span class="passe-simple">apparut</span>.  
+      Je <span class="plus-que-parfait">n’avais jamais vu</span> une telle clarté.  
+      La porte <span class="passe-simple">s’ouvrit</span> lentement.
     </div>
 
-    <p><b>4. Journal intime</b> — Mélange passé composé et imparfait.</p>
+    <p><b>4. Journal intime</b></p>
     <button onclick="toggleExemple('ex4')">Voir un exemple</button>
     <div id="ex4" class="exemple">
-      Hier soir, j’<span class="passe-simple">ai vu</span> mon film préféré.  
-      La salle <span class="imparfait">était</span> pleine et tout le monde <span class="imparfait">riait</span>.  
-      J’<span class="passe-simple">ai passé</span> une excellente soirée.
+      Hier soir, j’<span class="passe-simple">ai vu</span> un film.  
+      La salle <span class="imparfait">était</span> pleine et tout le monde <span class="imparfait">riait</span>.
     </div>
 
-    <p><b>5. Fait divers</b> — Utilise imparfait, passé simple et plus-que-parfait.</p>
+    <p><b>5. Fait divers</b></p>
     <button onclick="toggleExemple('ex5')">Voir un exemple</button>
     <div id="ex5" class="exemple">
       Il <span class="imparfait">faisait</span> encore nuit quand l’accident <span class="passe-simple">eut lieu</span>.  
-      La victime <span class="plus-que-parfait">avait traversé</span> la route quand une voiture <span class="passe-simple">arriva</span>.
+      La victime <span class="plus-que-parfait">avait traversé</span> la route.
+    </div>
+
+    <h2>🔄 Exercice de transformation</h2>
+    <p>Réécris ce texte au passé (imparfait, passé simple, plus-que-parfait) :</p>
+    <blockquote>
+      Aujourd’hui, il fait beau et les oiseaux chantent. Je vois mes amis et nous parlons ensemble.
+    </blockquote>
+    <button onclick="toggleExemple('ex6')">Voir la correction</button>
+    <div id="ex6" class="exemple">
+      Ce jour-là, il <span class="imparfait">faisait</span> beau et les oiseaux <span class="imparfait">chantaient</span>.  
+      Je <span class="passe-simple">vis</span> mes amis et nous <span class="passe-simple">parlâmes</span> ensemble.
     </div>
   </main>
 
   <script>
-    // Banque de 20 QCM
+    // Génération QCM
     const questions = [
-      { q: "Il <span class='imparfait'>pleuvait</span> depuis deux jours.", options: ["habitude","durée","action ponctuelle"], correct: 1 },
-      { q: "Il <span class='passe-simple'>entra</span> brusquement.", options: ["description","action brève","habitude"], correct: 1 },
-      { q: "Chaque été, ils <span class='imparfait'>allaient</span> à la montagne.", options: ["habitude","action ponctuelle","antériorité"], correct: 0 },
-      { q: "Quand j’<span class='passe-simple'>arrivai</span>, elle <span class='plus-que-parfait'>avait déjà mangé</span>.", options: ["description","antériorité","habitude"], correct: 1 },
-      { q: "Il <span class='imparfait'>faisait</span> nuit, le vent <span class='imparfait'>soufflait</span> fort.", options: ["action ponctuelle","description","bilan"], correct: 1 },
-      { q: "Soudain, la porte <span class='passe-simple'>claqua</span>.", options: ["habitude","action brève","décor"], correct: 1 },
-      { q: "Hier, j’<span class='passe-simple'>ai raté</span> le bus.", options: ["bilan dans le présent","habitude","description"], correct: 0 },
-      { q: "Il <span class='plus-que-parfait'>avait terminé</span> son travail avant que nous <span class='passe-simple'>arrivions</span>.", options: ["action principale","antériorité","description"], correct: 1 },
-      { q: "Pendant que je <span class='imparfait'>lisais</span>, il <span class='imparfait'>écrivait</span>.", options: ["action de fond","action principale","bilan"], correct: 0 },
-      { q: "Il <span class='passe-simple'>prit</span> son sac et <span class='passe-simple'>sortit</span> rapidement.", options: ["actions successives","habitude","description"], correct: 0 },
-      { q: "Tous les soirs, elle <span class='imparfait'>écrivait</span> dans son journal.", options: ["habitude","bilan","ponctualité"], correct: 0 },
-      { q: "Elle <span class='plus-que-parfait'>avait oublié</span> ses clés quand il <span class='passe-simple'>arriva</span>.", options: ["habitude","antériorité","action ponctuelle"], correct: 1 },
-      { q: "Il <span class='imparfait'>faisait</span> beau et les oiseaux <span class='imparfait'>chantaient</span>.", options: ["décor","bilan","action ponctuelle"], correct: 0 },
-      { q: "Je <span class='passe-simple'>suis allé</span> à Paris trois fois cette année.", options: ["action ponctuelle avec lien au présent","habitude","antériorité"], correct: 0 },
-      { q: "Il <span class='imparfait'>marchait</span> quand soudain un chien <span class='passe-simple'>surgit</span>.", options: ["action de fond","action principale","antériorité"], correct: 0 },
-      { q: "Il <span class='passe-simple'>eut</span> un geste de colère.", options: ["habitude","action ponctuelle","description"], correct: 1 },
-      { q: "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses affaires avant que je <span class='passe-simple'>vienne</span>.", options: ["habitude","action principale","antériorité"], correct: 2 },
-      { q: "Je <span class='passe-simple'>n’ai pas compris</span> la question.", options: ["bilan","habitude","décor"], correct: 0 },
-      { q: "Il <span class='passe-simple'>se leva</span>, <span class='passe-simple'>alla</span> vers la fenêtre et <span class='passe-simple'>ouvrit</span> les volets.", options: ["actions successives","habitude","décor"], correct: 0 },
-      { q: "Chaque hiver, ils <span class='imparfait'>restaient</span> enfermés à cause du froid.", options: ["habitude","ponctualité","bilan"], correct: 0 }
+      // 30 questions, reprenant les 20 déjà faites + 10 nouvelles
+      { q:"Il <span class='imparfait'>pleuvait</span> depuis deux jours. 🌸", options:["habitude","durée","action ponctuelle"], correct:1 },
+      { q:"Il <span class='passe-simple'>entra</span> brusquement. 💚", options:["description","action brève","habitude"], correct:1 },
+      { q:"Chaque été, ils <span class='imparfait'>allaient</span> à la montagne. 🌸", options:["habitude","action ponctuelle","antériorité"], correct:0 },
+      { q:"Quand j’<span class='passe-simple'>arrivai</span>, elle <span class='plus-que-parfait'>avait déjà mangé</span>. 💚💜", options:["description","antériorité","habitude"], correct:1 },
+      { q:"Il <span class='imparfait'>faisait</span> nuit, le vent <span class='imparfait'>soufflait</span> fort. 🌸", options:["action ponctuelle","description","bilan"], correct:1 },
+      { q:"Soudain, la porte <span class='passe-simple'>claqua</span>. 💚", options:["habitude","action brève","décor"], correct:1 },
+      { q:"Hier, j’<span class='passe-simple'>ai raté</span> le bus. 💚", options:["bilan dans le présent","habitude","description"], correct:0 },
+      { q:"Il <span class='plus-que-parfait'>avait terminé</span> son travail avant que nous <span class='passe-simple'>arrivions</span>. 💜💚", options:["action principale","antériorité","description"], correct:1 },
+      { q:"Pendant que je <span class='imparfait'>lisais</span>, il <span class='imparfait'>écrivait</span>. 🌸", options:["action de fond","action principale","bilan"], correct:0 },
+      { q:"Il <span class='passe-simple'>prit</span> son sac et <span class='passe-simple'>sortit</span>. 💚", options:["actions successives","habitude","description"], correct:0 },
+      { q:"Tous les soirs, elle <span class='imparfait'>écrivait</span> dans son journal. 🌸", options:["habitude","bilan","ponctualité"], correct:0 },
+      { q:"Elle <span class='plus-que-parfait'>avait oublié</span> ses clés quand il <span class='passe-simple'>arriva</span>. 💜💚", options:["habitude","antériorité","action ponctuelle"], correct:1 },
+      { q:"Il <span class='imparfait'>faisait</span> beau et les oiseaux <span class='imparfait'>chantaient</span>. 🌸", options:["décor","bilan","action ponctuelle"], correct:0 },
+      { q:"Je <span class='passe-simple'>suis allé</span> à Paris trois fois cette année. 💚", options:["action ponctuelle avec lien au présent","habitude","antériorité"], correct:0 },
+      { q:"Il <span class='imparfait'>marchait</span> quand un chien <span class='passe-simple'>surgit</span>. 🌸💚", options:["action de fond","action principale","antériorité"], correct:0 },
+      { q:"Il <span class='passe-simple'>eut</span> un geste de colère. 💚", options:["habitude","action ponctuelle","description"], correct:1 },
+      { q:"Il <span class='plus-que-parfait'>avait rangé</span> ses affaires avant que je <span class='passe-simple'>vienne</span>. 💜💚", options:["habitude","action principale","antériorité"], correct:2 },
+      { q:"Je <span class='passe-simple'>n’ai pas compris</span> la question. 💚", options:["bilan","habitude","décor"], correct:0 },
+      { q:"Il <span class='passe-simple'>se leva</span>, <span class='passe-simple'>alla</span>, <span class='passe-simple'>ouvrit</span>. 💚", options:["actions successives","habitude","décor"], correct:0 },
+      { q:"Chaque hiver, ils <span class='imparfait'>restaient</span> enfermés. 🌸", options:["habitude","ponctualité","bilan"], correct:0 },
+      { q:"La rue <span class='imparfait'>était</span> déserte. 🌸", options:["décor","action ponctuelle","habitude"], correct:0 },
+      { q:"Il <span class='passe-simple'>tomba</span> et <span class='passe-simple'>se blessa</span>. 💚", options:["actions successives","habitude","description"], correct:0 },
+      { q:"Elle <span class='plus-que-parfait'>avait écrit</span> avant de partir. 💜", options:["antériorité","description","action principale"], correct:0 },
+      { q:"Il <span class='imparfait'>regardait</span> la télé quand je <span class='passe-simple'>frappai</span>. 🌸💚", options:["fond + action","habitude","bilan"], correct:0 },
+      { q:"Nous <span class='imparfait'>allions</span> souvent au parc. 🌸", options:["habitude","ponctualité","décor"], correct:0 },
+      { q:"Quand il <span class='passe-simple'>eut fini</span>, il <span class='passe-simple'>partit</span>. 💚", options:["passé antérieur","habitude","description"], correct:0 },
+      { q:"Je <span class='plus-que-parfait'>n’avais jamais vu</span> cela. 💜", options:["antériorité","description","habitude"], correct:0 },
+      { q:"Il <span class='passe-simple'>vit</span> un chien et <span class='passe-simple'>s’enfuit</span>. 💚", options:["action ponctuelle","habitude","décor"], correct:0 },
+      { q:"La maison <span class='imparfait'>semblait</span> abandonnée. 🌸", options:["description","habitude","action ponctuelle"], correct:0 },
+      { q:"Ils <span class='passe-simple'>firent</span> leurs devoirs et <span class='passe-simple'>s’endormirent</span>. 💚", options:["actions successives","habitude","décor"], correct:0 }
     ];
 
     const container = document.getElementById("qcm-container");
@@ -175,7 +205,6 @@
     });
 
     let score = Array(questions.length).fill(null);
-
     document.querySelectorAll(".qcm-option").forEach(opt=>{
       opt.addEventListener("click",()=>{
         const qIndex = opt.dataset.q;

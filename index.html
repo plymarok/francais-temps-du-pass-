@@ -21,7 +21,7 @@
       font-weight: bold;
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: white;
@@ -70,6 +70,13 @@
       cursor: pointer;
     }
     button:hover { background: #0ea5e9; }
+    #result {
+      margin-top: 20px;
+      padding: 12px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -86,19 +93,10 @@
       Elle <span class="plus-que-parfait">avait préparé</span> ses affaires avant qu’il <span class="passe-simple">arrive</span>.
     </p>
 
-    <h2>❓ QCM</h2>
-    <div class="qcm-question" data-correct="b">
-      Dans « Il <span class="imparfait">marchait</span> chaque soir jusqu’à la rivière », l’imparfait exprime :
-      <span class="qcm-option" data-letter="a">a) description</span>
-      <span class="qcm-option" data-letter="b">b) habitude</span>
-      <span class="qcm-option" data-letter="c">c) action brève</span>
-    </div>
-    <div class="qcm-question" data-correct="b">
-      Dans « Elle <span class="passe-simple">prit</span> son sac et <span class="passe-simple">sortit</span> », le passé simple exprime :
-      <span class="qcm-option" data-letter="a">a) habitude</span>
-      <span class="qcm-option" data-letter="b">b) actions successives</span>
-      <span class="qcm-option" data-letter="c">c) décor</span>
-    </div>
+    <h2>❓ QCM (20 questions)</h2>
+    <div id="qcm-container"></div>
+    <button onclick="showScore()">Voir mon score</button>
+    <div id="result"></div>
 
     <h2>✍️ Exercices d’écriture</h2>
     <p><b>1. Souvenir de vacances</b> — Écris 5 lignes avec 2 imparfaits et 2 passés simples.</p>
@@ -124,22 +122,84 @@
       Je <span class="plus-que-parfait">n’avais jamais vu</span> une telle clarté auparavant.  
       La porte <span class="passe-simple">s’ouvrit</span> lentement et je <span class="passe-simple">m’enfuis</span>.
     </div>
+
+    <p><b>4. Journal intime</b> — Mélange passé composé et imparfait.</p>
+    <button onclick="toggleExemple('ex4')">Voir un exemple</button>
+    <div id="ex4" class="exemple">
+      Hier soir, j’<span class="passe-simple">ai vu</span> mon film préféré.  
+      La salle <span class="imparfait">était</span> pleine et tout le monde <span class="imparfait">riait</span>.  
+      J’<span class="passe-simple">ai passé</span> une excellente soirée.
+    </div>
+
+    <p><b>5. Fait divers</b> — Utilise imparfait, passé simple et plus-que-parfait.</p>
+    <button onclick="toggleExemple('ex5')">Voir un exemple</button>
+    <div id="ex5" class="exemple">
+      Il <span class="imparfait">faisait</span> encore nuit quand l’accident <span class="passe-simple">eut lieu</span>.  
+      La victime <span class="plus-que-parfait">avait traversé</span> la route quand une voiture <span class="passe-simple">arriva</span>.
+    </div>
   </main>
 
   <script>
-    // Gestion QCM
-    document.querySelectorAll('.qcm-option').forEach(opt => {
-      opt.addEventListener('click', () => {
-        const parent = opt.closest('.qcm-question');
-        const correct = parent.dataset.correct;
-        parent.querySelectorAll('.qcm-option').forEach(o => {
-          o.classList.remove('correct', 'incorrect');
-          if (o.dataset.letter === correct) o.classList.add('correct');
-          else if (o === opt) o.classList.add('incorrect');
+    // Banque de 20 QCM
+    const questions = [
+      { q: "Il <span class='imparfait'>pleuvait</span> depuis deux jours.", options: ["habitude","durée","action ponctuelle"], correct: 1 },
+      { q: "Il <span class='passe-simple'>entra</span> brusquement.", options: ["description","action brève","habitude"], correct: 1 },
+      { q: "Chaque été, ils <span class='imparfait'>allaient</span> à la montagne.", options: ["habitude","action ponctuelle","antériorité"], correct: 0 },
+      { q: "Quand j’<span class='passe-simple'>arrivai</span>, elle <span class='plus-que-parfait'>avait déjà mangé</span>.", options: ["description","antériorité","habitude"], correct: 1 },
+      { q: "Il <span class='imparfait'>faisait</span> nuit, le vent <span class='imparfait'>soufflait</span> fort.", options: ["action ponctuelle","description","bilan"], correct: 1 },
+      { q: "Soudain, la porte <span class='passe-simple'>claqua</span>.", options: ["habitude","action brève","décor"], correct: 1 },
+      { q: "Hier, j’<span class='passe-simple'>ai raté</span> le bus.", options: ["bilan dans le présent","habitude","description"], correct: 0 },
+      { q: "Il <span class='plus-que-parfait'>avait terminé</span> son travail avant que nous <span class='passe-simple'>arrivions</span>.", options: ["action principale","antériorité","description"], correct: 1 },
+      { q: "Pendant que je <span class='imparfait'>lisais</span>, il <span class='imparfait'>écrivait</span>.", options: ["action de fond","action principale","bilan"], correct: 0 },
+      { q: "Il <span class='passe-simple'>prit</span> son sac et <span class='passe-simple'>sortit</span> rapidement.", options: ["actions successives","habitude","description"], correct: 0 },
+      { q: "Tous les soirs, elle <span class='imparfait'>écrivait</span> dans son journal.", options: ["habitude","bilan","ponctualité"], correct: 0 },
+      { q: "Elle <span class='plus-que-parfait'>avait oublié</span> ses clés quand il <span class='passe-simple'>arriva</span>.", options: ["habitude","antériorité","action ponctuelle"], correct: 1 },
+      { q: "Il <span class='imparfait'>faisait</span> beau et les oiseaux <span class='imparfait'>chantaient</span>.", options: ["décor","bilan","action ponctuelle"], correct: 0 },
+      { q: "Je <span class='passe-simple'>suis allé</span> à Paris trois fois cette année.", options: ["action ponctuelle avec lien au présent","habitude","antériorité"], correct: 0 },
+      { q: "Il <span class='imparfait'>marchait</span> quand soudain un chien <span class='passe-simple'>surgit</span>.", options: ["action de fond","action principale","antériorité"], correct: 0 },
+      { q: "Il <span class='passe-simple'>eut</span> un geste de colère.", options: ["habitude","action ponctuelle","description"], correct: 1 },
+      { q: "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses affaires avant que je <span class='passe-simple'>vienne</span>.", options: ["habitude","action principale","antériorité"], correct: 2 },
+      { q: "Je <span class='passe-simple'>n’ai pas compris</span> la question.", options: ["bilan","habitude","décor"], correct: 0 },
+      { q: "Il <span class='passe-simple'>se leva</span>, <span class='passe-simple'>alla</span> vers la fenêtre et <span class='passe-simple'>ouvrit</span> les volets.", options: ["actions successives","habitude","décor"], correct: 0 },
+      { q: "Chaque hiver, ils <span class='imparfait'>restaient</span> enfermés à cause du froid.", options: ["habitude","ponctualité","bilan"], correct: 0 }
+    ];
+
+    const container = document.getElementById("qcm-container");
+    questions.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.className = "qcm-question";
+      div.innerHTML = `<b>Q${index+1}.</b> ${item.q}<br>` + item.options.map((opt,i)=>`
+        <span class="qcm-option" data-q="${index}" data-index="${i}">${String.fromCharCode(97+i)}) ${opt}</span>
+      `).join("");
+      container.appendChild(div);
+    });
+
+    let score = Array(questions.length).fill(null);
+
+    document.querySelectorAll(".qcm-option").forEach(opt=>{
+      opt.addEventListener("click",()=>{
+        const qIndex = opt.dataset.q;
+        const choice = parseInt(opt.dataset.index);
+        const parent = opt.closest(".qcm-question");
+        parent.querySelectorAll(".qcm-option").forEach(o=>{
+          o.classList.remove("correct","incorrect");
         });
+        if(choice===questions[qIndex].correct){
+          opt.classList.add("correct");
+          score[qIndex] = true;
+        } else {
+          opt.classList.add("incorrect");
+          parent.querySelector(`.qcm-option[data-index="${questions[qIndex].correct}"]`).classList.add("correct");
+          score[qIndex] = false;
+        }
       });
     });
-    // Gestion exemples
+
+    function showScore(){
+      const total = score.filter(v=>v===true).length;
+      document.getElementById("result").innerText = `Score : ${total} / ${questions.length}`;
+    }
+
     function toggleExemple(id) {
       const ex = document.getElementById(id);
       ex.style.display = (ex.style.display === 'block') ? 'none' : 'block';

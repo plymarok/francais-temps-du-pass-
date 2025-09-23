@@ -2,73 +2,86 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Valeurs des temps du passé — 4e</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Passés du récit — Coach & Révisions (4e)</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Révisions — Valeurs des temps du passé</h1>
-    <p>Site pédagogique 4e : cours clair, QCM interactif, écriture guidée, transformations.</p>
+    <h1>Passés du récit — le coach ultime</h1>
+    <p>Reconnais en un clin d’œil : <span class="imparfait">🌸 Imparfait</span> · <span class="passe-simple">💚 Passé simple</span> · <span class="plus-que-parfait">🟧 Plus-que-parfait</span> · <span class="passe-anterieur">🔷 Passé antérieur</span></p>
   </header>
 
   <nav aria-label="Sections">
-    <button class="active" data-go="#cours">Cours</button>
-    <button data-go="#qcm">QCM (30)</button>
-    <button data-go="#ecriture">Écriture</button>
-    <button data-go="#transfo">Transformation (20)</button>
+    <button class="active" data-go="#coach">Coach</button>
+    <button data-go="#cours">Cours</button>
+    <button data-go="#qcm">QCM (10)</button>
+    <button data-go="#transfo">Transformations (10)</button>
+    <button data-go="#ecriture">Écriture guidée (10)</button>
+    <button data-go="#memo">Fiche mémo</button>
   </nav>
 
   <main>
-    <!-- COURS -->
-    <section id="cours" class="card">
-      <h2>📖 Le cours — Rôles des temps</h2>
-      <p class="legend">
-        <span class="chip"><span class="imparfait">🌸 Imparfait</span> : décor, habitude, action de fond</span>
-        <span class="chip"><span class="passe-simple">💚 Passé simple</span> : actions principales, successives</span>
-        <span class="chip"><span class="plus-que-parfait">🟧 Plus-que-parfait</span> : « déjà avant » une autre action passée</span>
-      </p>
+    <section id="coach" class="card">
+      <h2>🤖 Coach de reconnaissance (3 étapes – 5 secondes)</h2>
+      <ol class="coach-steps">
+        <li><b>Regarde la forme du verbe</b> : terminaisons, auxiliaire + participe ?</li>
+        <li><b>Note le rôle</b> : décor/habitude ou événement qui fait avancer ?</li>
+        <li><b>Cherche les indices</b> : déjà, jamais, pas encore, quand/lorsque/dès que…</li>
+      </ol>
 
-      <div class="subcard">
-        <h3 class="imparfait">Imparfait 🌸</h3>
-        <ul>
-          <li><strong>Description</strong> : La ville <span class="imparfait">brillait</span>.</li>
-          <li><strong>Habitude</strong> : Il <span class="imparfait">lisait</span> chaque soir.</li>
-          <li><strong>Action de fond</strong> : Je <span class="imparfait">marchais</span> quand la pluie commença.</li>
-        </ul>
-      </div>
-      <div class="subcard">
-        <h3 class="passe-simple">Passé simple 💚</h3>
-        <ul>
-          <li><strong>Action ponctuelle</strong> : Il <span class="passe-simple">entra</span>.</li>
-          <li><strong>Successions</strong> : Il <span class="passe-simple">prit</span> son sac puis <span class="passe-simple">sortit</span>.</li>
-        </ul>
-      </div>
-      <div class="subcard">
-        <h3 class="plus-que-parfait">Plus-que-parfait 🟧</h3>
-        <ul>
-          <li><strong>Antériorité</strong> : action <em>achevée</em> <u>avant</u> un autre passé.</li>
-          <li><strong>Formation</strong> : avoir/être à l’imparfait + participe : <em>j’<u>avais</u> terminé</em>, <em>elle <u>était</u> partie</em>.</li>
-          <li><strong>Indices</strong> : déjà, avant, lorsque, après que…</li>
-        </ul>
-        <p>Ex. : Quand j’arrivai (💚), elle <span class="plus-que-parfait">avait déjà mangé</span> (🟧) → le repas est antérieur à l’arrivée.</p>
+      <div class="coach-grid">
+        <div class="coach-card imparfait-border">
+          <h3 class="imparfait">🌸 Imparfait</h3>
+          <ul>
+            <li><b>Indices forme :</b> -ais, -ais, -ait, -ions, -iez, -aient</li>
+            <li><b>Rôle :</b> décor, habitude, action de fond/en cours</li>
+            <li><b>Astuce éclair :</b> “Peut durer / être interrompu” → 🌸</li>
+          </ul>
+        </div>
+        <div class="coach-card passe-simple-border">
+          <h3 class="passe-simple">💚 Passé simple</h3>
+          <ul>
+            <li><b>Indices forme :</b> -ai/-as/-a/-âmes/-âtes/-èrent ; -is/-is/-it/-îmes/-îtes/-irent ; -us/-us/-ut/-ûmes/-ûtes/-urent</li>
+            <li><b>Rôle :</b> action ponctuelle, successions, premier plan</li>
+            <li><b>Astuce éclair :</b> “Ça claque / avance l’histoire” → 💚</li>
+          </ul>
+        </div>
+        <div class="coach-card pqp-border">
+          <h3 class="plus-que-parfait">🟧 Plus-que-parfait</h3>
+          <ul>
+            <li><b>Indices forme :</b> <i>avais/avait/avions/aviez/avaient</i> ou <i>étais/était/étions/étiez/étaient</i> + participe</li>
+            <li><b>Rôle :</b> antériorité (action déjà achevée avant une autre)</li>
+            <li><b>Astuce éclair :</b> “déjà avant” → 🟧</li>
+          </ul>
+        </div>
+        <div class="coach-card pa-border">
+          <h3 class="passe-anterieur">🔷 Passé antérieur</h3>
+          <ul>
+            <li><b>Indices forme :</b> <i>eus/eut/eurent</i> ou <i>fus/fut/fûmes/fûtes/furent</i> + participe</li>
+            <li><b>Rôle :</b> antériorité <u>immédiate</u> liée au passé simple (souvent après <i>quand, lorsque, dès que, après que</i>)</li>
+            <li><b>Astuce éclair :</b> “juste avant + style soutenu” → 🔷</li>
+          </ul>
+        </div>
       </div>
 
-      <table class="memo">
-        <thead><tr><th>Temps</th><th>Valeurs</th><th>Exemple</th></tr></thead>
-        <tbody>
-          <tr><td class="imparfait">Imparfait 🌸</td><td>Description, habitude, fond</td><td>Le vent <span class="imparfait">soufflait</span>.</td></tr>
-          <tr><td class="passe-simple">Passé simple 💚</td><td>Ponctuel, successions</td><td>Il <span class="passe-simple">ouvrit</span> la porte.</td></tr>
-          <tr><td class="plus-que-parfait">Plus-que-parfait 🟧</td><td>Antériorité</td><td>Elle <span class="plus-que-parfait">avait rangé</span> ses affaires.</td></tr>
-        </tbody>
-      </table>
+      <div class="coach-tester">
+        <h3>Test express</h3>
+        <p>Colle une phrase avec un verbe conjugué : le coach détecte le temps et t’explique.</p>
+        <textarea id="coachInput" rows="2" placeholder="Ex. : Lorsqu’il eut terminé, il partit."></textarea>
+        <button class="btn" id="coachBtn">Analyser</button>
+        <div id="coachOut" class="feedback" style="display:none"></div>
+      </div>
     </section>
 
-    <!-- QCM -->
-    <section id="qcm" class="card">
-      <h2>❓ QCM — 30 questions (alternance 🌸 / 💚 / 🟧)</h2>
-      <p class="legend">Légende rappelée dans chaque carte : 🌸 Imparfait · 💚 Passé simple · 🟧 Plus-que-parfait</p>
+    <section id="cours" class="card">
+      <h2>📖 Le cours</h2>
+      <div id="coursContainer"></div>
+    </section>
 
+    <section id="qcm" class="card">
+      <h2>❓ QCM (10)</h2>
+      <p class="legend">Légende : <span class="imparfait">🌸 Imparfait</span> · <span class="passe-simple">💚 Passé simple</span> · <span class="plus-que-parfait">🟧 Plus-que-parfait</span> · <span class="passe-anterieur">🔷 Passé antérieur</span></p>
       <div class="qcm-controls">
         <label>Filtrer
           <select id="filter">
@@ -76,39 +89,36 @@
             <option value="imparfait">Imparfait (🌸)</option>
             <option value="passe-simple">Passé simple (💚)</option>
             <option value="plus-que-parfait">Plus-que-parfait (🟧)</option>
+            <option value="passe-anterieur">Passé antérieur (🔷)</option>
           </select>
         </label>
-        <label>Ordre
-          <select id="order">
-            <option value="alternated">Alterné (par défaut)</option>
-            <option value="as-is">Données (tel quel)</option>
-            <option value="random">Aléatoire</option>
-          </select>
-        </label>
+        <button id="shuffle">Mélanger</button>
         <button id="reset" class="secondary">Réinitialiser</button>
         <div class="progress">
-          <span id="scoreTxt">Score : 0 / 30</span>
+          <span id="scoreTxt">Score : 0 / 10</span>
           <div class="bar"><span id="barFill"></span></div>
         </div>
       </div>
-
-      <div id="qcmContainer" aria-live="polite"></div>
+      <div id="qcmContainer"></div>
     </section>
 
-    <!-- ECRITURE -->
+    <section id="transfo" class="card">
+      <h2>🔄 Transformations (10)</h2>
+      <div id="transfoContainer"></div>
+    </section>
+
     <section id="ecriture" class="card">
-      <h2>✍️ Exercices d’écriture (avec exemples)</h2>
+      <h2>✍️ Écriture guidée (10)</h2>
       <div id="ecritureContainer"></div>
     </section>
 
-    <!-- TRANSFORMATION -->
-    <section id="transfo" class="card">
-      <h2>🔄 Transformations — du présent au passé (20)</h2>
-      <div id="transfoContainer"></div>
+    <section id="memo" class="card">
+      <h2>🧭 Fiche mémo — valeurs et terminaisons</h2>
+      <div id="memoContainer"></div>
     </section>
   </main>
 
-  <footer>Code couleur : 🌸 Imparfait · 💚 Passé simple · 🟧 Plus-que-parfait</footer>
+  <footer>Code couleur : <span class="imparfait">🌸 Imparfait</span> · <span class="passe-simple">💚 Passé simple</span> · <span class="plus-que-parfait">🟧 Plus-que-parfait</span> · <span class="passe-anterieur">🔷 Passé antérieur</span></footer>
 
   <script src="app.js" defer></script>
 </body>

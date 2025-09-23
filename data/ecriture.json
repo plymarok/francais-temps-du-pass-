@@ -1,54 +1,29 @@
 {
-  "exercices": [
+  "items": [
     {
-      "title": "Souvenir de vacances",
-      "consigne": "2 imparfaits (décor/habitude) + 2 passés simples (événements).",
-      "example_html": "Il <span class='imparfait'>faisait</span> doux et la mer <span class='imparfait'>miroitait</span> ; nous <span class='passe-simple'>marchâmes</span> longtemps puis un goéland <span class='passe-simple'>plongea</span>."
+      "present": "Aujourd’hui, il fait froid et la rue est déserte. Je vois Léa et nous parlons un instant.",
+      "correction_html": "Ce jour-là, il <span class='imparfait'>faisait</span> froid et la rue <span class='imparfait'>était</span> déserte. Je <span class='passe-simple'>vis</span> Léa et nous <span class='passe-simple'>parlâmes</span> un instant.",
+      "justification": "🌸 pour le décor durable (faisait/était) ; 💚 pour les événements ponctuels (vis/parlâmes) qui font avancer le récit."
     },
     {
-      "title": "Scène de classe",
-      "consigne": "Fond à l’imparfait, action décisive au passé simple.",
-      "example_html": "La salle <span class='imparfait'>était</span> silencieuse, chacun <span class='imparfait'>écrivait</span> quand le professeur <span class='passe-simple'>demanda</span> mon cahier."
+      "present": "Lorsqu’elle termine, elle sort immédiatement.",
+      "correction_html": "Lorsqu’elle <span class='passe-anterieur'>eut terminé</span>, elle <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 après « lorsqu’ » : auxiliaire au passé simple + participe → antériorité <u>immédiate</u> avant l’action principale au 💚."
     },
     {
-      "title": "Récit historique (passé antérieur)",
-      "consigne": "Utilise 🔷 en subordonnée puis 💚 en principale.",
-      "example_html": "Lorsqu’ils <span class='passe-anterieur'>eurent franchi</span> le pont, les troupes <span class='passe-simple'>avancèrent</span> vers la ville."
+      "present": "Quand il arrive, il s’assoit : il a déjà rangé ses papiers.",
+      "correction_html": "Quand il <span class='passe-simple'>arriva</span>, il <span class='passe-simple'>s’assit</span> : il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers.",
+      "justification": "🟧 = auxiliaire à l’imparfait + participe (« avait rangé ») → résultat antérieur ; 💚 pour les actions ponctuelles (« arriva/s’assit »)."
     },
     {
-      "title": "Journal de bord",
-      "consigne": "Décor à l’imparfait + 2 actions au passé simple.",
-      "example_html": "Le quai <span class='imparfait'>était</span> désert ; le train <span class='passe-simple'>entra</span> et je <span class='passe-simple'>montai</span> d’un pas décidé."
+      "present": "Vous attendez calmement et vous souriez quand le train part.",
+      "correction_html": "Vous <span class='imparfait'>attendiez</span> calmement et vous <span class='imparfait'>souriez</span> quand le train <span class='passe-simple'>partit</span>.",
+      "justification": "🌸 pour le fond simultané (attendiez/souriez) ; 💚 pour l’événement déclencheur (« partit »)."
     },
     {
-      "title": "Fait divers (pqp cause)",
-      "consigne": "Place 🟧 pour une cause antérieure.",
-      "example_html": "L’alarme <span class='passe-simple'>retentit</span> : le gardien <span class='plus-que-parfait'>avait oublié</span> de verrouiller la porte."
-    },
-    {
-      "title": "Scène fantastique",
-      "consigne": "Mêle 🌸 pour l’ambiance et 💚 pour l’irruption.",
-      "example_html": "Il <span class='imparfait'>faisait</span> nuit ; une lueur <span class='passe-simple'>apparut</span> derrière la colline."
-    },
-    {
-      "title": "Portrait en mouvement",
-      "consigne": "Décris au fond (🌸), déclenche un geste (💚).",
-      "example_html": "Elle <span class='imparfait'>portait</span> une écharpe rouge ; à l’angle, elle <span class='passe-simple'>accéléra</span>."
-    },
-    {
-      "title": "Retour de voyage (pqp)",
-      "consigne": "Caser 🟧 pour « déjà avant ».",
-      "example_html": "Nous <span class='plus-que-parfait'>avions réservé</span> une chambre ; le réceptionniste <span class='passe-simple'>nous accueillit</span> aussitôt."
-    },
-    {
-      "title": "Chronique sportive (passé antérieur)",
-      "consigne": "🔷 en proposition temporelle + 💚 pour l’action décrite.",
-      "example_html": "Dès qu’il <span class='passe-anterieur'>eut servi</span>, le public <span class='passe-simple'>se leva</span> d’un bond."
-    },
-    {
-      "title": "Mémoire personnelle",
-      "consigne": "Alternance réaliste 🌸 + 💚 ; ponctue par une cause 🟧 si pertinent.",
-      "example_html": "Je <span class='imparfait'>regardais</span> la route ; un bruit <span class='passe-simple'>éclata</span> : j’<span class='plus-que-parfait'>avais oublié</span> de fermer le capot."
+      "present": "Après qu’il signe, tout le monde applaudit.",
+      "correction_html": "Après qu’il <span class='passe-anterieur'>eut signé</span>, tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "🔷 avec « après que » (eut + participe) → action achevée juste avant l’acclamation au 💚."
     }
   ]
 }

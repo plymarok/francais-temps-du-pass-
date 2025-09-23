@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Passés du récit — Site ultra simple</title>
+  <title>Passés du récit — Site simple (avec PA & feedback détaillé)</title>
   <style>
     :root{--bg:#f7f9fc;--card:#fff;--ink:#0f172a;--muted:#475569;--rose:#d81b60;--green:#15803d;--orange:#ea580c;--blue:#3b82f6}
     *{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}
@@ -26,24 +26,24 @@
 </head>
 <body>
   <header>
-    <h1>Passés du récit — site ultra simple</h1>
+    <h1>Passés du récit — version simple</h1>
     <p>Légende : <span class="imparfait">🌸 Imparfait</span> · <span class="passe-simple">💚 Passé simple</span> · <span class="plus-que-parfait">🟧 Plus-que-parfait</span> · <span class="passe-anterieur">🔷 Passé antérieur</span></p>
-    <p style="opacity:.9">Fonctionne <b>hors-ligne</b> — données en JSON intégrées ci-dessous. Des copies sont aussi fournies dans <code>data/*.txt</code>.</p>
+    <p style="opacity:.9">Tout fonctionne <b>hors‑ligne</b> (zéro fetch). Les JSON sont intégrés et aussi fournis en <code>data/*.txt</code>.</p>
   </header>
 
   <main>
     <section class="card">
-      <h2>❓ QCM (10)</h2>
+      <h2>❓ QCM (12) — feedback détaillé</h2>
       <div id="qcm"></div>
     </section>
 
     <section class="card">
-      <h2>🔄 Transformations (10)</h2>
+      <h2>🔄 Transformations</h2>
       <div id="transfo"></div>
     </section>
 
     <section class="card">
-      <h2>✍️ Écriture guidée (10)</h2>
+      <h2>✍️ Écriture guidée</h2>
       <div id="ecriture"></div>
     </section>
 
@@ -53,30 +53,30 @@
     </section>
   </main>
 
-  <!-- JSON intégré -->
+  <!-- JSON intégrés -->
   <script type="application/json" id="qcm-data">{
   "questions": [
     {
       "tense": "imparfait",
       "question_html": "La rue <span class='imparfait'>était</span> silencieuse. 🌸",
       "options": [
-        "description/décor",
-        "action ponctuelle",
-        "antériorité"
+        "description/décor de fond",
+        "action unique et brève",
+        "action antérieure à une autre"
       ],
       "correct_index": 0,
-      "feedback": "Imparfait = décor/état d’arrière-plan."
+      "feedback": "Imparfait de description : terminaison -ait (3e pers. sing.), valeur d’arrière‑plan qui installe le décor sans faire avancer l’action."
     },
     {
       "tense": "passe-simple",
       "question_html": "La porte <span class='passe-simple'>claqua</span> soudain. 💚",
       "options": [
-        "habitude",
-        "action ponctuelle",
-        "antériorité"
+        "habitude/durée",
+        "action unique et achevée",
+        "action antérieure à une autre"
       ],
       "correct_index": 1,
-      "feedback": "Passé simple = action brève et saillante."
+      "feedback": "Passé simple : forme simple en -a (1er groupe, 3e pers. sing.) + marqueur « soudain » → événement ponctuel qui fait progresser le récit."
     },
     {
       "tense": "plus-que-parfait",
@@ -87,29 +87,29 @@
         "description"
       ],
       "correct_index": 1,
-      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait + participe : action achevée avant l’autre passé."
+      "feedback": "Plus‑que‑parfait = auxiliaire <i>avoir</i> à l’imparfait (« avait ») + participe passé. L’adverbe « déjà » renforce l’idée d’un résultat antérieur."
     },
     {
       "tense": "passe-anterieur",
       "question_html": "Lorsque nous <span class='passe-anterieur'>eûmes terminé</span>, nous <span class='passe-simple'>partîmes</span>. 🔷",
       "options": [
-        "antériorité immédiate (juste avant)",
+        "antériorité immédiate liée au passé simple",
         "habitude",
         "description"
       ],
       "correct_index": 0,
-      "feedback": "Passé antérieur = auxiliaire au passé simple + participe, subordonnée d’antériorité immédiate liée au passé simple."
+      "feedback": "Passé antérieur : auxiliaire <i>avoir</i> au passé simple (« eûmes ») + participe. Action achevée <u>juste avant</u> l’action principale au passé simple (« partîmes »), souvent après « lorsque/quand/dès que/après que »."
     },
     {
       "tense": "imparfait",
       "question_html": "Ils <span class='imparfait'>jouaient</span> souvent dans la cour. 🌸",
       "options": [
         "habitude",
-        "action ponctuelle",
+        "action brève et unique",
         "antériorité"
       ],
       "correct_index": 0,
-      "feedback": "Imparfait = habitude (indice « souvent »)."
+      "feedback": "Terminaison -aient (3e pers. plur.) + marqueur d’habitude « souvent » : valeur itérative de l’imparfait."
     },
     {
       "tense": "passe-simple",
@@ -120,18 +120,18 @@
         "antériorité"
       ],
       "correct_index": 1,
-      "feedback": "Passé simple = perception ponctuelle."
+      "feedback": "Verbe « voir » au passé simple, 1re pers. sing. (« vis ») : perception instantanée → action ponctuelle saillante."
     },
     {
       "tense": "plus-que-parfait",
       "question_html": "Vous <span class='plus-que-parfait'>aviez préparé</span> la salle. 🟧",
       "options": [
         "description",
-        "antériorité (déjà avant)",
-        "action ponctuelle"
+        "antériorité (résultat déjà acquis)",
+        "action brève"
       ],
       "correct_index": 1,
-      "feedback": "Résultat déjà acquis avant la scène principale."
+      "feedback": "Auxiliaire à l’imparfait (« aviez ») + participe (« préparé ») : état résultant antérieur à une autre action du passé."
     },
     {
       "tense": "passe-anterieur",
@@ -142,7 +142,7 @@
         "description"
       ],
       "correct_index": 0,
-      "feedback": "« Après que » + auxiliaire au passé simple → antériorité tout juste antérieure au passé simple."
+      "feedback": "Structure typique : subordonnant temporel (« après que ») + auxiliaire au passé simple (« eut ») + participe (« signé »). L’action est terminée immédiatement avant l’acclamation au passé simple."
     },
     {
       "tense": "imparfait",
@@ -153,7 +153,7 @@
         "antériorité"
       ],
       "correct_index": 0,
-      "feedback": "Imparfait = action de fond sur laquelle se greffe un événement."
+      "feedback": "Imparfait de fond (« marchais ») : action en cours interrompue par un événement (l’éclat de l’orage, généralement au passé simple)."
     },
     {
       "tense": "passe-simple",
@@ -164,7 +164,29 @@
         "antériorité"
       ],
       "correct_index": 1,
-      "feedback": "Passé simple (vous -îtes) = acte unique, borné."
+      "feedback": "Passé simple, 2e pers. plur. en -îtes (« prîtes ») : action unique et achevée → premier plan narratif."
+    },
+    {
+      "tense": "passe-anterieur",
+      "question_html": "Dès que vous <span class='passe-anterieur'>eûtes terminé</span>, la séance <span class='passe-simple'>commença</span>. 🔷",
+      "options": [
+        "antériorité immédiate (vous)",
+        "habitude",
+        "description"
+      ],
+      "correct_index": 0,
+      "feedback": "« eûtes » (2e pers. plur. du passé simple de <i>avoir</i>) + participe (« terminé ») : passé antérieur marquant l’achèvement juste avant l’ouverture de la séance au passé simple."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>étions arrivés</span> avant la fermeture. 🟧",
+      "options": [
+        "description",
+        "antériorité simple (nous)",
+        "action ponctuelle"
+      ],
+      "correct_index": 1,
+      "feedback": "Auxiliaire <i>être</i> à l’imparfait (« étions ») + participe accordé (« arrivés ») : plus‑que‑parfait exprimant un fait antérieur au repère passé (« fermeture »)."
     }
   ]
 }</script>
@@ -173,52 +195,27 @@
     {
       "present": "Aujourd’hui, il fait froid et la rue est déserte. Je vois Léa et nous parlons un instant.",
       "correction_html": "Ce jour-là, il <span class='imparfait'>faisait</span> froid et la rue <span class='imparfait'>était</span> déserte. Je <span class='passe-simple'>vis</span> Léa et nous <span class='passe-simple'>parlâmes</span> un instant.",
-      "justification": "Imparfait pour le décor durable ; passé simple pour les événements brefs qui font avancer le récit."
-    },
-    {
-      "present": "Quand il arrive, il s’assoit : il a déjà rangé ses papiers.",
-      "correction_html": "Quand il <span class='passe-simple'>arriva</span>, il <span class='passe-simple'>s’assit</span> : il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers.",
-      "justification": "Antériorité simple exprimée par le plus-que-parfait (« avait déjà rangé ») ; arrivées/s’assit = événements ponctuels au passé simple."
+      "justification": "🌸 pour le décor durable (faisait/était) ; 💚 pour les événements ponctuels (vis/parlâmes) qui font avancer le récit."
     },
     {
       "present": "Lorsqu’elle termine, elle sort immédiatement.",
       "correction_html": "Lorsqu’elle <span class='passe-anterieur'>eut terminé</span>, elle <span class='passe-simple'>sortit</span> immédiatement.",
-      "justification": "Passé antérieur après « lorsqu’ » pour une antériorité immédiate liée au passé simple (« sortit »)."
+      "justification": "🔷 après « lorsqu’ » : auxiliaire au passé simple + participe → antériorité <u>immédiate</u> avant l’action principale au 💚."
     },
     {
-      "present": "Je marche dans le parc, j’entends un cri et je cours.",
-      "correction_html": "Je <span class='imparfait'>marchais</span> dans le parc, j’<span class='passe-simple'>entendis</span> un cri et je <span class='passe-simple'>courus</span>.",
-      "justification": "Action de fond à l’imparfait ; événements déclencheurs au passé simple."
-    },
-    {
-      "present": "Nous avons déjà visité le musée avant d’aller au parc.",
-      "correction_html": "Nous <span class='plus-que-parfait'>avions déjà visité</span> le musée avant d’<span class='passe-simple'>aller</span> au parc.",
-      "justification": "Antériorité simple (« avions déjà visité ») avant l’action suivante au passé simple."
-    },
-    {
-      "present": "Dès qu’ils finissent, ils quittent la salle.",
-      "correction_html": "Dès qu’ils <span class='passe-anterieur'>eurent fini</span>, ils <span class='passe-simple'>quittèrent</span> la salle.",
-      "justification": "Marqueur « dès que » + auxiliaire au passé simple → passé antérieur (antériorité immédiate) suivi d’un passé simple."
+      "present": "Quand il arrive, il s’assoit : il a déjà rangé ses papiers.",
+      "correction_html": "Quand il <span class='passe-simple'>arriva</span>, il <span class='passe-simple'>s’assit</span> : il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers.",
+      "justification": "🟧 = auxiliaire à l’imparfait + participe (« avait rangé ») → résultat antérieur ; 💚 pour les actions ponctuelles (« arriva/s’assit »)."
     },
     {
       "present": "Vous attendez calmement et vous souriez quand le train part.",
       "correction_html": "Vous <span class='imparfait'>attendiez</span> calmement et vous <span class='imparfait'>souriez</span> quand le train <span class='passe-simple'>partit</span>.",
-      "justification": "Attente/sourire = fond simultané (imparfait) ; départ = événement ponctuel (passé simple)."
-    },
-    {
-      "present": "Elle a déjà fermé la porte lorsque je reviens.",
-      "correction_html": "Elle <span class='plus-que-parfait'>avait déjà fermé</span> la porte lorsque je <span class='passe-simple'>revins</span>.",
-      "justification": "Plus-que-parfait pour l’action antérieure « déjà fermé » ; « revins » = événement ponctuel."
+      "justification": "🌸 pour le fond simultané (attendiez/souriez) ; 💚 pour l’événement déclencheur (« partit »)."
     },
     {
       "present": "Après qu’il signe, tout le monde applaudit.",
       "correction_html": "Après qu’il <span class='passe-anterieur'>eut signé</span>, tout le monde <span class='passe-simple'>applaudit</span>.",
-      "justification": "Subordonnant « après que » + passé antérieur → antériorité immédiate avant le passé simple."
-    },
-    {
-      "present": "Ils discutent depuis un moment ; soudain, la porte s’ouvre.",
-      "correction_html": "Ils <span class='imparfait'>discutaient</span> depuis un moment ; soudain, la porte <span class='passe-simple'>s’ouvrit</span>.",
-      "justification": "Imparfait pour la durée de fond ; passé simple pour l’irruption soudaine."
+      "justification": "🔷 avec « après que » (eut + participe) → action achevée juste avant l’acclamation au 💚."
     }
   ]
 }</script>
@@ -226,53 +223,18 @@
   "exercices": [
     {
       "title": "Souvenir de vacances",
-      "consigne": "2 imparfaits (décor/habitude) + 2 passés simples (événements).",
+      "consigne": "2 🌸 (décor/habitude) + 2 💚 (événements).",
       "example_html": "Il <span class='imparfait'>faisait</span> doux et la mer <span class='imparfait'>miroitait</span> ; nous <span class='passe-simple'>marchâmes</span> longtemps puis un goéland <span class='passe-simple'>plongea</span>."
     },
     {
-      "title": "Scène de classe",
-      "consigne": "Fond à l’imparfait, action décisive au passé simple.",
-      "example_html": "La salle <span class='imparfait'>était</span> silencieuse, chacun <span class='imparfait'>écrivait</span> quand le professeur <span class='passe-simple'>demanda</span> mon cahier."
-    },
-    {
       "title": "Récit historique (passé antérieur)",
-      "consigne": "Utilise 🔷 en subordonnée puis 💚 en principale.",
-      "example_html": "Lorsqu’ils <span class='passe-anterieur'>eurent franchi</span> le pont, les troupes <span class='passe-simple'>avancèrent</span> vers la ville."
+      "consigne": "🔷 en subordonnée + 💚 en principale.",
+      "example_html": "Dès qu’ils <span class='passe-anterieur'>eurent franchi</span> le pont, les troupes <span class='passe-simple'>avancèrent</span>."
     },
     {
-      "title": "Journal de bord",
-      "consigne": "Décor à l’imparfait + 2 actions au passé simple.",
-      "example_html": "Le quai <span class='imparfait'>était</span> désert ; le train <span class='passe-simple'>entra</span> et je <span class='passe-simple'>montai</span> d’un pas décidé."
-    },
-    {
-      "title": "Fait divers (pqp cause)",
-      "consigne": "Place 🟧 pour une cause antérieure.",
-      "example_html": "L’alarme <span class='passe-simple'>retentit</span> : le gardien <span class='plus-que-parfait'>avait oublié</span> de verrouiller la porte."
-    },
-    {
-      "title": "Scène fantastique",
-      "consigne": "Mêle 🌸 pour l’ambiance et 💚 pour l’irruption.",
-      "example_html": "Il <span class='imparfait'>faisait</span> nuit ; une lueur <span class='passe-simple'>apparut</span> derrière la colline."
-    },
-    {
-      "title": "Portrait en mouvement",
-      "consigne": "Décris au fond (🌸), déclenche un geste (💚).",
-      "example_html": "Elle <span class='imparfait'>portait</span> une écharpe rouge ; à l’angle, elle <span class='passe-simple'>accéléra</span>."
-    },
-    {
-      "title": "Retour de voyage (pqp)",
-      "consigne": "Caser 🟧 pour « déjà avant ».",
-      "example_html": "Nous <span class='plus-que-parfait'>avions réservé</span> une chambre ; le réceptionniste <span class='passe-simple'>nous accueillit</span> aussitôt."
-    },
-    {
-      "title": "Chronique sportive (passé antérieur)",
-      "consigne": "🔷 en proposition temporelle + 💚 pour l’action décrite.",
-      "example_html": "Dès qu’il <span class='passe-anterieur'>eut servi</span>, le public <span class='passe-simple'>se leva</span> d’un bond."
-    },
-    {
-      "title": "Mémoire personnelle",
-      "consigne": "Alternance réaliste 🌸 + 💚 ; ponctue par une cause 🟧 si pertinent.",
-      "example_html": "Je <span class='imparfait'>regardais</span> la route ; un bruit <span class='passe-simple'>éclata</span> : j’<span class='plus-que-parfait'>avais oublié</span> de fermer le capot."
+      "title": "Fait divers (cause antérieure)",
+      "consigne": "Place 🟧 pour le « déjà avant ».",
+      "example_html": "L’alarme <span class='passe-simple'>retentit</span> : le gardien <span class='plus-que-parfait'>avait oublié</span> de verrouiller."
     }
   ]
 }</script>
@@ -280,37 +242,37 @@
   "valeurs": [
     {
       "class": "passe-simple",
-      "title": "💚 Passé simple — premier plan",
-      "desc": "Actions brèves, achevées, qui font avancer le récit.",
+      "title": "💚 Passé simple — actions du premier plan",
+      "desc": "Actions brèves, achevées, perçues comme ponctuelles ; elles font avancer le récit.",
       "example_html": "Il <span class='passe-simple'>entra</span>, <span class='passe-simple'>salua</span> puis <span class='passe-simple'>sortit</span>."
     },
     {
       "class": "imparfait",
-      "title": "🌸 Imparfait — arrière-plan",
-      "desc": "Décor/description, habitude, action de fond/en cours.",
+      "title": "🌸 Imparfait — arrière-plan (durée/habitude)",
+      "desc": "Décor, actions en cours, habitudes ; souvent compatibles avec « pendant que », « souvent », « toujours ».",
       "example_html": "La ville <span class='imparfait'>brillait</span> et les passants <span class='imparfait'>parlaient</span>."
     },
     {
       "class": "plus-que-parfait",
       "title": "🟧 Plus-que-parfait — antériorité simple",
-      "desc": "Action déjà achevée avant une autre action du passé (auxiliaire à l’imparfait + participe).",
+      "desc": "Auxiliaire à l’imparfait (avais/étais…) + participe : action déjà accomplie avant un autre fait passé.",
       "example_html": "Elle <span class='plus-que-parfait'>avait terminé</span> avant qu’il <span class='passe-simple'>arriva</span>."
     },
     {
       "class": "passe-anterieur",
-      "title": "🔷 Passé antérieur — antériorité immédiate",
-      "desc": "Action accomplie juste avant une action au passé simple ; souvent après quand, lorsque, dès que, après que (auxiliaire au passé simple + participe).",
+      "title": "🔷 Passé antérieur — antériorité immédiate (style soutenu)",
+      "desc": "Auxiliaire au passé simple (eus/fus, eût…/fût…) + participe ; très fréquent après « quand/lorsque/dès que/après que ». L’action s’achève juste avant la principale au passé simple.",
       "example_html": "Lorsqu’il <span class='passe-anterieur'>eut fini</span>, il <span class='passe-simple'>partit</span>."
     }
   ]
 }</script>
 
   <script>
-    function getJSON(id){ return JSON.parse(document.getElementById(id).textContent); }
+    function J(id){return JSON.parse(document.getElementById(id).textContent);}
 
     // QCM
     (function(){
-      const data = getJSON('qcm-data').questions;
+      const data = J('qcm-data').questions;
       const box = document.getElementById('qcm');
       data.forEach((q,i)=>{
         const div = document.createElement('div'); div.className='q';
@@ -338,7 +300,7 @@
 
     // Transformations
     (function(){
-      const data = getJSON('transfo-data').items;
+      const data = J('transfo-data').items;
       const box = document.getElementById('transfo');
       data.forEach((t,i)=>{
         const d = document.createElement('div'); d.className='ex';
@@ -358,7 +320,7 @@
 
     // Écriture
     (function(){
-      const data = getJSON('ecriture-data').exercices;
+      const data = J('ecriture-data').exercices;
       const box = document.getElementById('ecriture');
       data.forEach((e,i)=>{
         const d = document.createElement('div'); d.className='ex';
@@ -377,7 +339,7 @@
 
     // Mémo
     (function(){
-      const data = getJSON('memo-data').valeurs;
+      const data = J('memo-data').valeurs;
       const box = document.getElementById('memo');
       data.forEach(m=>{
         const d = document.createElement('div'); d.className='q';

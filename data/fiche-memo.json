@@ -2,26 +2,26 @@
   "valeurs": [
     {
       "class": "passe-simple",
-      "title": "💚 Passé simple — premier plan",
-      "desc": "Actions brèves, achevées, qui font avancer le récit.",
+      "title": "💚 Passé simple — actions du premier plan",
+      "desc": "Actions brèves, achevées, perçues comme ponctuelles ; elles font avancer le récit.",
       "example_html": "Il <span class='passe-simple'>entra</span>, <span class='passe-simple'>salua</span> puis <span class='passe-simple'>sortit</span>."
     },
     {
       "class": "imparfait",
-      "title": "🌸 Imparfait — arrière-plan",
-      "desc": "Décor/description, habitude, action de fond/en cours.",
+      "title": "🌸 Imparfait — arrière-plan (durée/habitude)",
+      "desc": "Décor, actions en cours, habitudes ; souvent compatibles avec « pendant que », « souvent », « toujours ».",
       "example_html": "La ville <span class='imparfait'>brillait</span> et les passants <span class='imparfait'>parlaient</span>."
     },
     {
       "class": "plus-que-parfait",
       "title": "🟧 Plus-que-parfait — antériorité simple",
-      "desc": "Action déjà achevée avant une autre action du passé (auxiliaire à l’imparfait + participe).",
+      "desc": "Auxiliaire à l’imparfait (avais/étais…) + participe : action déjà accomplie avant un autre fait passé.",
       "example_html": "Elle <span class='plus-que-parfait'>avait terminé</span> avant qu’il <span class='passe-simple'>arriva</span>."
     },
     {
       "class": "passe-anterieur",
-      "title": "🔷 Passé antérieur — antériorité immédiate",
-      "desc": "Action accomplie juste avant une action au passé simple ; souvent après quand, lorsque, dès que, après que (auxiliaire au passé simple + participe).",
+      "title": "🔷 Passé antérieur — antériorité immédiate (style soutenu)",
+      "desc": "Auxiliaire au passé simple (eus/fus, eût…/fût…) + participe ; très fréquent après « quand/lorsque/dès que/après que ». L’action s’achève juste avant la principale au passé simple.",
       "example_html": "Lorsqu’il <span class='passe-anterieur'>eut fini</span>, il <span class='passe-simple'>partit</span>."
     }
   ]

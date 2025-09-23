@@ -1,29 +1,204 @@
 {
   "items": [
     {
-      "present": "Aujourd’hui, il fait froid et la rue est déserte. Je vois Léa et nous parlons un instant.",
-      "correction_html": "Ce jour-là, il <span class='imparfait'>faisait</span> froid et la rue <span class='imparfait'>était</span> déserte. Je <span class='passe-simple'>vis</span> Léa et nous <span class='passe-simple'>parlâmes</span> un instant.",
-      "justification": "🌸 pour le décor durable (faisait/était) ; 💚 pour les événements ponctuels (vis/parlâmes) qui font avancer le récit."
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
     },
     {
-      "present": "Lorsqu’elle termine, elle sort immédiatement.",
-      "correction_html": "Lorsqu’elle <span class='passe-anterieur'>eut terminé</span>, elle <span class='passe-simple'>sortit</span> immédiatement.",
-      "justification": "🔷 après « lorsqu’ » : auxiliaire au passé simple + participe → antériorité <u>immédiate</u> avant l’action principale au 💚."
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
     },
     {
-      "present": "Quand il arrive, il s’assoit : il a déjà rangé ses papiers.",
-      "correction_html": "Quand il <span class='passe-simple'>arriva</span>, il <span class='passe-simple'>s’assit</span> : il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers.",
-      "justification": "🟧 = auxiliaire à l’imparfait + participe (« avait rangé ») → résultat antérieur ; 💚 pour les actions ponctuelles (« arriva/s’assit »)."
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
     },
     {
-      "present": "Vous attendez calmement et vous souriez quand le train part.",
-      "correction_html": "Vous <span class='imparfait'>attendiez</span> calmement et vous <span class='imparfait'>souriez</span> quand le train <span class='passe-simple'>partit</span>.",
-      "justification": "🌸 pour le fond simultané (attendiez/souriez) ; 💚 pour l’événement déclencheur (« partit »)."
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
     },
     {
-      "present": "Après qu’il signe, tout le monde applaudit.",
-      "correction_html": "Après qu’il <span class='passe-anterieur'>eut signé</span>, tout le monde <span class='passe-simple'>applaudit</span>.",
-      "justification": "🔷 avec « après que » (eut + participe) → action achevée juste avant l’acclamation au 💚."
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
+    },
+    {
+      "present": "Aujourd’hui, il entre et tout le monde applaudit.",
+      "correction_html": "Ce jour-là, il <span class='passe-simple'>entra</span> et tout le monde <span class='passe-simple'>applaudit</span>.",
+      "justification": "💚 pour deux actions ponctuelles successives (entrer/applaudir)."
+    },
+    {
+      "present": "Il marche dans la rue quand l’orage éclate.",
+      "correction_html": "Il <span class='imparfait'>marchait</span> dans la rue quand l’orage <span class='passe-simple'>éclata</span>.",
+      "justification": "🌸 pour l’action de fond (« marchait ») ; 💚 pour l’irruption (« éclata »)."
+    },
+    {
+      "present": "Il a déjà rangé ses papiers lorsqu’elle arrive.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses papiers lorsqu’elle <span class='passe-simple'>arriva</span>.",
+      "justification": "🟧 pour marquer l’antériorité simple (« avait déjà rangé ») ; 💚 pour l’arrivée."
+    },
+    {
+      "present": "Quand il termine, il sort immédiatement.",
+      "correction_html": "Quand il <span class='passe-anterieur'>eut terminé</span>, il <span class='passe-simple'>sortit</span> immédiatement.",
+      "justification": "🔷 (eut + participe) après « quand » → antériorité <u>immédiate</u> avant la sortie au 💚."
+    },
+    {
+      "present": "Ils jouent souvent au parc, puis ils partent.",
+      "correction_html": "Ils <span class='imparfait'>jouaient</span> souvent au parc ; puis ils <span class='passe-simple'>partirent</span>.",
+      "justification": "🌸 pour l’habitude (« jouaient souvent ») ; 💚 pour l’action qui fait avancer (« partirent »)."
     }
   ]
 }

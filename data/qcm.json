@@ -4,23 +4,23 @@
       "tense": "imparfait",
       "question_html": "La rue <span class='imparfait'>était</span> silencieuse. 🌸",
       "options": [
-        "description/décor",
-        "action ponctuelle",
-        "antériorité"
+        "description/décor de fond",
+        "action unique et brève",
+        "action antérieure à une autre"
       ],
       "correct_index": 0,
-      "feedback": "Imparfait = décor/état d’arrière-plan."
+      "feedback": "Imparfait de description : terminaison -ait (3e pers. sing.), valeur d’arrière‑plan qui installe le décor sans faire avancer l’action."
     },
     {
       "tense": "passe-simple",
       "question_html": "La porte <span class='passe-simple'>claqua</span> soudain. 💚",
       "options": [
-        "habitude",
-        "action ponctuelle",
-        "antériorité"
+        "habitude/durée",
+        "action unique et achevée",
+        "action antérieure à une autre"
       ],
       "correct_index": 1,
-      "feedback": "Passé simple = action brève et saillante."
+      "feedback": "Passé simple : forme simple en -a (1er groupe, 3e pers. sing.) + marqueur « soudain » → événement ponctuel qui fait progresser le récit."
     },
     {
       "tense": "plus-que-parfait",
@@ -31,29 +31,29 @@
         "description"
       ],
       "correct_index": 1,
-      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait + participe : action achevée avant l’autre passé."
+      "feedback": "Plus‑que‑parfait = auxiliaire <i>avoir</i> à l’imparfait (« avait ») + participe passé. L’adverbe « déjà » renforce l’idée d’un résultat antérieur."
     },
     {
       "tense": "passe-anterieur",
       "question_html": "Lorsque nous <span class='passe-anterieur'>eûmes terminé</span>, nous <span class='passe-simple'>partîmes</span>. 🔷",
       "options": [
-        "antériorité immédiate (juste avant)",
+        "antériorité immédiate liée au passé simple",
         "habitude",
         "description"
       ],
       "correct_index": 0,
-      "feedback": "Passé antérieur = auxiliaire au passé simple + participe, subordonnée d’antériorité immédiate liée au passé simple."
+      "feedback": "Passé antérieur : auxiliaire <i>avoir</i> au passé simple (« eûmes ») + participe. Action achevée <u>juste avant</u> l’action principale au passé simple (« partîmes »), souvent après « lorsque/quand/dès que/après que »."
     },
     {
       "tense": "imparfait",
       "question_html": "Ils <span class='imparfait'>jouaient</span> souvent dans la cour. 🌸",
       "options": [
         "habitude",
-        "action ponctuelle",
+        "action brève et unique",
         "antériorité"
       ],
       "correct_index": 0,
-      "feedback": "Imparfait = habitude (indice « souvent »)."
+      "feedback": "Terminaison -aient (3e pers. plur.) + marqueur d’habitude « souvent » : valeur itérative de l’imparfait."
     },
     {
       "tense": "passe-simple",
@@ -64,18 +64,18 @@
         "antériorité"
       ],
       "correct_index": 1,
-      "feedback": "Passé simple = perception ponctuelle."
+      "feedback": "Verbe « voir » au passé simple, 1re pers. sing. (« vis ») : perception instantanée → action ponctuelle saillante."
     },
     {
       "tense": "plus-que-parfait",
       "question_html": "Vous <span class='plus-que-parfait'>aviez préparé</span> la salle. 🟧",
       "options": [
         "description",
-        "antériorité (déjà avant)",
-        "action ponctuelle"
+        "antériorité (résultat déjà acquis)",
+        "action brève"
       ],
       "correct_index": 1,
-      "feedback": "Résultat déjà acquis avant la scène principale."
+      "feedback": "Auxiliaire à l’imparfait (« aviez ») + participe (« préparé ») : état résultant antérieur à une autre action du passé."
     },
     {
       "tense": "passe-anterieur",
@@ -86,7 +86,7 @@
         "description"
       ],
       "correct_index": 0,
-      "feedback": "« Après que » + auxiliaire au passé simple → antériorité tout juste antérieure au passé simple."
+      "feedback": "Structure typique : subordonnant temporel (« après que ») + auxiliaire au passé simple (« eut ») + participe (« signé »). L’action est terminée immédiatement avant l’acclamation au passé simple."
     },
     {
       "tense": "imparfait",
@@ -97,7 +97,7 @@
         "antériorité"
       ],
       "correct_index": 0,
-      "feedback": "Imparfait = action de fond sur laquelle se greffe un événement."
+      "feedback": "Imparfait de fond (« marchais ») : action en cours interrompue par un événement (l’éclat de l’orage, généralement au passé simple)."
     },
     {
       "tense": "passe-simple",
@@ -108,7 +108,29 @@
         "antériorité"
       ],
       "correct_index": 1,
-      "feedback": "Passé simple (vous -îtes) = acte unique, borné."
+      "feedback": "Passé simple, 2e pers. plur. en -îtes (« prîtes ») : action unique et achevée → premier plan narratif."
+    },
+    {
+      "tense": "passe-anterieur",
+      "question_html": "Dès que vous <span class='passe-anterieur'>eûtes terminé</span>, la séance <span class='passe-simple'>commença</span>. 🔷",
+      "options": [
+        "antériorité immédiate (vous)",
+        "habitude",
+        "description"
+      ],
+      "correct_index": 0,
+      "feedback": "« eûtes » (2e pers. plur. du passé simple de <i>avoir</i>) + participe (« terminé ») : passé antérieur marquant l’achèvement juste avant l’ouverture de la séance au passé simple."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>étions arrivés</span> avant la fermeture. 🟧",
+      "options": [
+        "description",
+        "antériorité simple (nous)",
+        "action ponctuelle"
+      ],
+      "correct_index": 1,
+      "feedback": "Auxiliaire <i>être</i> à l’imparfait (« étions ») + participe accordé (« arrivés ») : plus‑que‑parfait exprimant un fait antérieur au repère passé (« fermeture »)."
     }
   ]
 }

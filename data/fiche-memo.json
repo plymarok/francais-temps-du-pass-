@@ -1,1 +1,28 @@
-
+{
+  "valeurs": [
+    {
+      "class": "passe-simple",
+      "title": "💚 Passé simple — actions du premier plan",
+      "desc": "Actions brèves, achevées, qui font avancer le récit (enchaînements).",
+      "example_html": "Il <span class='passe-simple'>entra</span>, <span class='passe-simple'>salua</span> puis <span class='passe-simple'>sortit</span>."
+    },
+    {
+      "class": "imparfait",
+      "title": "🌸 Imparfait — arrière-plan",
+      "desc": "Décor/description, habitude, action de fond/en cours, simultanéité possible.",
+      "example_html": "La ville <span class='imparfait'>brillait</span> et les passants <span class='imparfait'>parlaient</span>."
+    },
+    {
+      "class": "plus-que-parfait",
+      "title": "🟧 Plus-que-parfait — antériorité simple",
+      "desc": "Action déjà achevée avant une autre action du passé. Formation : auxiliaire à l’imparfait + participe.",
+      "example_html": "Elle <span class='plus-que-parfait'>avait terminé</span> avant qu’il <span class='passe-simple'>arriva</span>."
+    },
+    {
+      "class": "passe-anterieur",
+      "title": "🔷 Passé antérieur — antériorité immédiate (soutenu)",
+      "desc": "Action accomplie juste avant une action au passé simple ; souvent après quand, lorsque, dès que, après que… Formation : auxiliaire au passé simple + participe.",
+      "example_html": "Lorsqu’il <span class='passe-anterieur'>eut fini</span>, il <span class='passe-simple'>partit</span>."
+    }
+  ]
+}

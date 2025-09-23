@@ -1,65 +1,209 @@
 {
   "items": [
-    { "present": "Aujourd’hui, la rue est calme et les enfants jouent. Je vois Paul et nous parlons devant la librairie.",
-      "correction_html": "Ce jour-là, la rue <span class='imparfait'>était</span> calme et les enfants <span class='imparfait'>jouaient</span>. Je <span class='passe-simple'>vis</span> Paul et nous <span class='passe-simple'>parlâmes</span> devant la librairie."
+    {
+      "present": "Aujourd’hui, la rue est calme et les enfants jouent. Je vois Paul et nous parlons devant la librairie.",
+      "correction_html": "Ce jour-là, la rue <span class='imparfait'>était</span> calme et les enfants <span class='imparfait'>jouaient</span>. Je <span class='passe-simple'>vis</span> Paul et nous <span class='passe-simple'>parlâmes</span> devant la librairie.",
+      "justification": "Imparfait pour le décor (était, jouaient) ; passé simple pour les événements qui font avancer le récit (vis, parlâmes)."
     },
-    { "present": "Il arrive, regarde sa montre et sourit : il a déjà terminé son rapport.",
-      "correction_html": "Il <span class='passe-simple'>arriva</span>, <span class='passe-simple'>regarda</span> sa montre et <span class='passe-simple'>sourit</span> : il <span class='plus-que-parfait'>avait déjà terminé</span> son rapport."
+    {
+      "present": "Il arrive, regarde sa montre et sourit : il a déjà terminé son rapport.",
+      "correction_html": "Il <span class='passe-simple'>arriva</span>, <span class='passe-simple'>regarda</span> sa montre et <span class='passe-simple'>sourit</span> : il <span class='plus-que-parfait'>avait déjà terminé</span> son rapport.",
+      "justification": "Passé simple pour la suite d’actions ponctuelles ; plus-que-parfait pour l’action antérieure déjà achevée (« avait terminé »)."
     },
-    { "present": "Le vent souffle et la mer se forme. Soudain, un bateau apparaît.",
-      "correction_html": "Le vent <span class='imparfait'>soufflait</span> et la mer <span class='imparfait'>se formait</span>. Soudain, un bateau <span class='passe-simple'>apparut</span>."
+    {
+      "present": "Le vent souffle, la mer se forme ; un bateau apparaît soudain.",
+      "correction_html": "Le vent <span class='imparfait'>soufflait</span>, la mer <span class='imparfait'>se formait</span> ; un bateau <span class='passe-simple'>apparut</span> soudain.",
+      "justification": "Imparfait = arrière-plan/durée ; passé simple = événement bref et saillant (apparut)."
     },
-    { "present": "Je marche dans la forêt, j’entends un bruit et je me cache.",
-      "correction_html": "Je <span class='imparfait'>marchais</span> dans la forêt, j’<span class='passe-simple'>entendis</span> un bruit et je me <span class='passe-simple'>cachai</span>."
+    {
+      "present": "Je marche dans la forêt, j’entends un bruit et je me cache.",
+      "correction_html": "Je <span class='imparfait'>marchais</span> dans la forêt, j’<span class='passe-simple'>entendis</span> un bruit et je me <span class='passe-simple'>cachai</span>.",
+      "justification": "Imparfait pour l’action de fond (marchais) ; passé simple pour les actions ponctuelles (entendis, cachai)."
     },
-    { "present": "Nous ouvrons la fenêtre, l’air entre et nous rions.",
-      "correction_html": "Nous <span class='passe-simple'>ouvrîmes</span> la fenêtre, l’air <span class='passe-simple'>entra</span> et nous <span class='passe-simple'>rîmes</span>."
+    {
+      "present": "Nous ouvrons la fenêtre, l’air entre et nous rions.",
+      "correction_html": "Nous <span class='passe-simple'>ouvrîmes</span> la fenêtre, l’air <span class='passe-simple'>entra</span> et nous <span class='passe-simple'>rîmes</span>.",
+      "justification": "Trois événements successifs → passé simple."
     },
-    { "present": "Elle prépare le dîner puis elle sert la table. Elle a déjà épluché les légumes.",
-      "correction_html": "Elle <span class='passe-simple'>prépara</span> le dîner puis <span class='passe-simple'>servit</span> la table. Elle <span class='plus-que-parfait'>avait déjà épluché</span> les légumes."
+    {
+      "present": "Elle prépare le dîner puis sert la table. Elle a déjà épluché les légumes.",
+      "correction_html": "Elle <span class='passe-simple'>prépara</span> le dîner puis <span class='passe-simple'>servit</span> la table. Elle <span class='plus-que-parfait'>avait déjà épluché</span> les légumes.",
+      "justification": "Passé simple pour les actions ponctuelles ; plus-que-parfait pour marquer l’antériorité (« déjà »)."
     },
-    { "present": "Les enfants chuchotent et regardent le couloir. Le directeur entre.",
-      "correction_html": "Les enfants <span class='imparfait'>chuchotaient</span> et <span class='imparfait'>regardaient</span> le couloir. Le directeur <span class='passe-simple'>entra</span>."
+    {
+      "present": "Les enfants chuchotent et regardent le couloir. Le directeur entre.",
+      "correction_html": "Les enfants <span class='imparfait'>chuchotaient</span> et <span class='imparfait'>regardaient</span> le couloir. Le directeur <span class='passe-simple'>entra</span>.",
+      "justification": "Imparfait pour l’arrière-plan simultané (chuchotaient, regardaient) ; passé simple pour l’irruption (entra)."
     },
-    { "present": "Je prends mon sac, je sors et je téléphone. J’ai déjà noté le rendez-vous.",
-      "correction_html": "Je <span class='passe-simple'>pris</span> mon sac, je <span class='passe-simple'>sortis</span> et je <span class='passe-simple'>téléphonai</span>. J’<span class='plus-que-parfait'>avais déjà noté</span> le rendez-vous."
+    {
+      "present": "Je prends mon sac, je sors et je téléphone. J’ai déjà noté le rendez-vous.",
+      "correction_html": "Je <span class='passe-simple'>pris</span> mon sac, je <span class='passe-simple'>sortis</span> et je <span class='passe-simple'>téléphonai</span>. J’<span class='plus-que-parfait'>avais déjà noté</span> le rendez-vous.",
+      "justification": "Suite d’actions → passé simple ; l’inscription est antérieure → plus-que-parfait."
     },
-    { "present": "Il traverse la rue, entend un cri et court vers la place.",
-      "correction_html": "Il <span class='passe-simple'>traversa</span> la rue, <span class='passe-simple'>entendit</span> un cri et <span class='passe-simple'>courut</span> vers la place."
+    {
+      "present": "Il traverse la rue, entend un cri et court vers la place.",
+      "correction_html": "Il <span class='passe-simple'>traversa</span> la rue, <span class='passe-simple'>entendit</span> un cri et <span class='passe-simple'>courut</span> vers la place.",
+      "justification": "Trois événements brefs et successifs → passé simple."
     },
-    { "present": "La pluie tombe, les feux brillent et la ville s’illumine.",
-      "correction_html": "La pluie <span class='imparfait'>tombait</span>, les feux <span class='imparfait'>brillaient</span> et la ville <span class='imparfait'>s’illuminait</span>."
+    {
+      "present": "La pluie tombe, les feux brillent et la ville s’illumine.",
+      "correction_html": "La pluie <span class='imparfait'>tombait</span>, les feux <span class='imparfait'>brillaient</span> et la ville <span class='imparfait'>s’illuminait</span>.",
+      "justification": "Imparfait pour peindre un décor/une durée continue."
     },
-    { "present": "Je vois la montagne, je pense à mon enfance et j’écris quelques lignes.",
-      "correction_html": "Je <span class='passe-simple'>vis</span> la montagne, je <span class='passe-simple'>pensai</span> à mon enfance et j’<span class='passe-simple'>écrivis</span> quelques lignes."
+    {
+      "present": "Je vois la montagne, je pense à mon enfance et j’écris quelques lignes.",
+      "correction_html": "Je <span class='passe-simple'>vis</span> la montagne, je <span class='passe-simple'>pensai</span> à mon enfance et j’<span class='passe-simple'>écrivis</span> quelques lignes.",
+      "justification": "Perception, pensée, écriture saillantes et ponctuelles → passé simple."
     },
-    { "present": "Elle parle doucement, cherche ses clés et sourit. Elle a déjà fermé les volets.",
-      "correction_html": "Elle <span class='imparfait'>parlait</span> doucement, <span class='imparfait'>cherchait</span> ses clés et <span class='imparfait'>souriait</span>. Elle <span class='plus-que-parfait'>avait déjà fermé</span> les volets."
+    {
+      "present": "Elle parle doucement, cherche ses clés et sourit. Elle a déjà fermé les volets.",
+      "correction_html": "Elle <span class='imparfait'>parlait</span> doucement, <span class='imparfait'>cherchait</span> ses clés et <span class='imparfait'>souriait</span>. Elle <span class='plus-que-parfait'>avait déjà fermé</span> les volets.",
+      "justification": "Imparfait pour l’action en cours (fond) ; plus-que-parfait pour l’action antérieure déjà accomplie."
     },
-    { "present": "Nous discutons, la cloche sonne et nous entrons en classe.",
-      "correction_html": "Nous <span class='imparfait'>discutions</span> quand la cloche <span class='passe-simple'>sonna</span>, et nous <span class='passe-simple'>entrâmes</span> en classe."
+    {
+      "present": "Nous discutons, la cloche sonne et nous entrons en classe.",
+      "correction_html": "Nous <span class='imparfait'>discutions</span> quand la cloche <span class='passe-simple'>sonna</span>, et nous <span class='passe-simple'>entrâmes</span> en classe.",
+      "justification": "Imparfait pour l’action en cours (discutions) interrompue par un événement ponctuel (sonna) → passé simple."
     },
-    { "present": "Il se réveille, regarde l’heure et se lève d’un bond.",
-      "correction_html": "Il se <span class='passe-simple'>réveilla</span>, <span class='passe-simple'>regarda</span> l’heure et se <span class='passe-simple'>leva</span> d’un bond."
+    {
+      "present": "Il se réveille, regarde l’heure et se lève d’un bond.",
+      "correction_html": "Il se <span class='passe-simple'>réveilla</span>, <span class='passe-simple'>regarda</span> l’heure et se <span class='passe-simple'>leva</span> d’un bond.",
+      "justification": "Trois actions nettes et successives → passé simple."
     },
-    { "present": "Je rentre, je pose mes affaires et je bois un verre d’eau.",
-      "correction_html": "Je <span class='passe-simple'>rentr(ai)</span>, je <span class='passe-simple'>posai</span> mes affaires et je <span class='passe-simple'>bus</span> un verre d’eau."
+    {
+      "present": "Je rentre, je pose mes affaires et je bois un verre d’eau.",
+      "correction_html": "Je <span class='passe-simple'>rentrai</span>, je <span class='passe-simple'>posai</span> mes affaires et je <span class='passe-simple'>bus</span> un verre d’eau.",
+      "justification": "Enchaînement d’actions ponctuelles → passé simple."
     },
-    { "present": "Ils arrivent déjà calmes : ils ont terminé la dispute avant de venir.",
-      "correction_html": "Ils <span class='passe-simple'>arrivèrent</span> déjà calmes : ils <span class='plus-que-parfait'>avaient terminé</span> la dispute avant de venir."
+    {
+      "present": "Ils arrivent déjà calmes : ils ont terminé la dispute avant de venir.",
+      "correction_html": "Ils <span class='passe-simple'>arrivèrent</span> déjà calmes : ils <span class='plus-que-parfait'>avaient terminé</span> la dispute avant de venir.",
+      "justification": "Passé simple pour l’arrivée ; plus-que-parfait pour l’action antérieure (avaient terminé)."
     },
-    { "present": "La neige tombe et recouvre les toits. Les passants regardent en silence.",
-      "correction_html": "La neige <span class='imparfait'>tombait</span> et <span class='imparfait'>recouvrait</span> les toits. Les passants <span class='imparfait'>regardaient</span> en silence."
+    {
+      "present": "La neige tombe et recouvre les toits. Les passants regardent en silence.",
+      "correction_html": "La neige <span class='imparfait'>tombait</span> et <span class='imparfait'>recouvrait</span> les toits. Les passants <span class='imparfait'>regardaient</span> en silence.",
+      "justification": "Imparfait pour un décor étiré dans la durée."
     },
-    { "present": "Je ferme l’ordinateur, j’éteins la lumière et je sors doucement.",
-      "correction_html": "Je <span class='passe-simple'>fermai</span> l’ordinateur, j’<span class='passe-simple'>éteignis</span> la lumière et je <span class='passe-simple'>sortis</span> doucement."
+    {
+      "present": "Je ferme l’ordinateur, j’éteins la lumière et je sors doucement.",
+      "correction_html": "Je <span class='passe-simple'>fermai</span> l’ordinateur, j’<span class='passe-simple'>éteignis</span> la lumière et je <span class='passe-simple'>sortis</span> doucement.",
+      "justification": "Suite d’actions brèves → passé simple."
     },
-    { "present": "Elle écrit une note, colle l’étiquette et sourit : elle a déjà rangé les dossiers.",
-      "correction_html": "Elle <span class='passe-simple'>écrivit</span> une note, <span class='passe-simple'>colla</span> l’étiquette et <span class='passe-simple'>sourit</span> : elle <span class='plus-que-parfait'>avait déjà rangé</span> les dossiers."
+    {
+      "present": "Elle écrit une note, colle l’étiquette et sourit : elle a déjà rangé les dossiers.",
+      "correction_html": "Elle <span class='passe-simple'>écrivit</span> une note, <span class='passe-simple'>colla</span> l’étiquette et <span class='passe-simple'>sourit</span> : elle <span class='plus-que-parfait'>avait déjà rangé</span> les dossiers.",
+      "justification": "Passé simple pour la séquence d’actions ; plus-que-parfait pour l’antériorité (« avait déjà rangé »)."
     },
-    { "present": "Nous regardons la carte, choisissons une route et partons.",
-      "correction_html": "Nous <span class='passe-simple'>regardâmes</span> la carte, <span class='passe-simple'>choisîmes</span> une route et <span class='passe-simple'>partîmes</span>."
+    {
+      "present": "Nous regardons la carte, choisissons une route et partons.",
+      "correction_html": "Nous <span class='passe-simple'>regardâmes</span> la carte, <span class='passe-simple'>choisîmes</span> une route et <span class='passe-simple'>partîmes</span>.",
+      "justification": "Trois événements décidés et bornés → passé simple."
+    },
+    {
+      "present": "Je passe devant la boulangerie et je sens l’odeur du pain.",
+      "correction_html": "Je <span class='imparfait'>passais</span> devant la boulangerie et je <span class='passe-simple'>sentis</span> l’odeur du pain.",
+      "justification": "Imparfait pour l’action de fond (passais) ; passé simple pour la perception ponctuelle (sentis)."
+    },
+    {
+      "present": "Tu t’arrêtes, tu regardes autour de toi et tu cries soudain.",
+      "correction_html": "Tu t’<span class='passe-simple'>arrêtas</span>, tu <span class='passe-simple'>regardas</span> autour de toi et tu <span class='passe-simple'>crias</span> soudain.",
+      "justification": "Trois actions brèves successives → passé simple."
+    },
+    {
+      "present": "Il fait sombre, les nuages avancent et la pluie commence.",
+      "correction_html": "Il <span class='imparfait'>faisait</span> sombre, les nuages <span class='imparfait'>avançaient</span> et la pluie <span class='passe-simple'>commença</span>.",
+      "justification": "Imparfait pour le décor en mouvement (faisait, avançaient) ; passé simple pour le déclenchement (commença)."
+    },
+    {
+      "present": "Elle se souvient d’un détail et change d’avis.",
+      "correction_html": "Elle se <span class='passe-simple'>souvint</span> d’un détail et <span class='passe-simple'>changea</span> d’avis.",
+      "justification": "Deux événements intérieurs brefs → passé simple."
+    },
+    {
+      "present": "Nous nous perdons, nous cherchons une carte et nous demandons notre chemin.",
+      "correction_html": "Nous nous <span class='passe-simple'>perdîmes</span>, nous <span class='passe-simple'>cherchâmes</span> une carte et nous <span class='passe-simple'>demandâmes</span> notre chemin.",
+      "justification": "Enchaînement d’actions ponctuelles → passé simple."
+    },
+    {
+      "present": "Vous avancez lentement, vous parlez à voix basse et vous hésitez.",
+      "correction_html": "Vous <span class='imparfait'>avanciez</span> lentement, vous <span class='imparfait'>parliez</span> à voix basse et vous <span class='imparfait'>hésitiez</span>.",
+      "justification": "Imparfait pour décrire l’attitude durable et l’arrière-plan (pas d’événement saillant)."
+    },
+    {
+      "present": "Ils discutent vivement ; soudain, la porte s’ouvre et tout le monde se tait.",
+      "correction_html": "Ils <span class='imparfait'>discutaient</span> vivement ; soudain, la porte <span class='passe-simple'>s’ouvrit</span> et tout le monde <span class='passe-simple'>se tut</span>.",
+      "justification": "Imparfait pour l’action en cours ; passé simple pour l’irruption et sa conséquence immédiate."
+    },
+    {
+      "present": "Je pense à elle depuis un moment ; quand elle arrive, je souris.",
+      "correction_html": "Je <span class='imparfait'>pensais</span> à elle depuis un moment ; quand elle <span class='passe-simple'>arriva</span>, je <span class='passe-simple'>souris</span>.",
+      "justification": "Imparfait pour la durée ; passé simple pour les événements déclencheurs (arriva, souris)."
+    },
+    {
+      "present": "Tu te rappelles soudain l’heure et tu cours vers la gare.",
+      "correction_html": "Tu te <span class='passe-simple'>rappelas</span> soudain l’heure et tu <span class='passe-simple'>courus</span> vers la gare.",
+      "justification": "Réaction instantanée + mouvement → passé simple."
+    },
+    {
+      "present": "Il a déjà rangé ses affaires quand la cloche sonne.",
+      "correction_html": "Il <span class='plus-que-parfait'>avait déjà rangé</span> ses affaires quand la cloche <span class='passe-simple'>sonna</span>.",
+      "justification": "Plus-que-parfait pour l’action antérieure (avait déjà rangé) ; passé simple pour l’événement ponctuel (sonna)."
+    },
+    {
+      "present": "Elle n’a pas encore répondu quand nous appelons.",
+      "correction_html": "Elle <span class='plus-que-parfait'>n’avait pas encore répondu</span> quand nous <span class='passe-simple'>appelâmes</span>.",
+      "justification": "« Pas encore » marque un état antérieur non accompli → plus-que-parfait ; l’appel est ponctuel → passé simple."
+    },
+    {
+      "present": "Nous avons déjà visité le musée avant d’aller au parc.",
+      "correction_html": "Nous <span class='plus-que-parfait'>avions déjà visité</span> le musée avant d’<span class='passe-simple'>aller</span> au parc.",
+      "justification": "Visite antérieure → plus-que-parfait ; action suivante (aller) → passé simple."
+    },
+    {
+      "present": "Vous terminez le projet et vous envoyez le mail.",
+      "correction_html": "Vous <span class='passe-simple'>terminâtes</span> le projet et vous <span class='passe-simple'>envoyâtes</span> le mail.",
+      "justification": "Deux événements successifs, achevés → passé simple (vous -âtes)."
+    },
+    {
+      "present": "Ils rentrent tôt ; ils ont déjà rangé la cuisine.",
+      "correction_html": "Ils <span class='passe-simple'>rentrèrent</span> tôt ; ils <span class='plus-que-parfait'>avaient déjà rangé</span> la cuisine.",
+      "justification": "Arrivée ponctuelle → passé simple ; action préalable (« déjà rangé ») → plus-que-parfait."
+    },
+    {
+      "present": "Je m’assieds, j’ouvre mon cahier et j’écris la date.",
+      "correction_html": "Je m’<span class='passe-simple'>assis</span>, j’<span class='passe-simple'>ouvris</span> mon cahier et j’<span class='passe-simple'>écrivis</span> la date.",
+      "justification": "Trois actions ponctuelles et ordonnées → passé simple."
+    },
+    {
+      "present": "Tu hésites, tu regardes la foule et tu souris finalement.",
+      "correction_html": "Tu <span class='imparfait'>hésitais</span>, tu <span class='imparfait'>regardais</span> la foule et tu <span class='passe-simple'>souris</span> finalement.",
+      "justification": "Imparfait pour l’attitude en cours ; passé simple pour le dénouement ponctuel (souris)."
+    },
+    {
+      "present": "Il fait nuit et le vent souffle ; soudain, une lumière apparaît.",
+      "correction_html": "Il <span class='imparfait'>faisait</span> nuit et le vent <span class='imparfait'>soufflait</span> ; soudain, une lumière <span class='passe-simple'>apparut</span>.",
+      "justification": "Imparfait (décor) + passé simple pour l’irruption (apparut)."
+    },
+    {
+      "present": "Elle a déjà fermé la porte quand je reviens.",
+      "correction_html": "Elle <span class='plus-que-parfait'>avait déjà fermé</span> la porte quand je <span class='passe-simple'>revins</span>.",
+      "justification": "Plus-que-parfait pour « déjà fermé » (antériorité) ; retour ponctuel → passé simple."
+    },
+    {
+      "present": "Nous avons oublié le plan ; alors nous demandons notre chemin.",
+      "correction_html": "Nous <span class='plus-que-parfait'>avions oublié</span> le plan ; alors nous <span class='passe-simple'>demandâmes</span> notre chemin.",
+      "justification": "Cause antérieure (avions oublié) → plus-que-parfait ; action suivante ponctuelle → passé simple."
+    },
+    {
+      "present": "Vous entrez dans la salle, vous posez vos sacs et vous vous asseyez.",
+      "correction_html": "Vous <span class='passe-simple'>entrâtes</span> dans la salle, vous <span class='passe-simple'>posâtes</span> vos sacs et vous vous <span class='passe-simple'>assîtes</span>.",
+      "justification": "Trois actions brèves successives → passé simple (vous -âtes / assîtes)."
+    },
+    {
+      "present": "Ils regardent la scène ; ils n’avaient pas encore compris l’énigme.",
+      "correction_html": "Ils <span class='imparfait'>regardaient</span> la scène ; ils <span class='plus-que-parfait'>n’avaient pas encore compris</span> l’énigme.",
+      "justification": "Regardaient = action de fond (imparfait) ; état antérieur non accompli « pas encore compris » = plus-que-parfait."
     }
   ]
 }
-

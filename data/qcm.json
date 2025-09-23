@@ -1,198 +1,1192 @@
 {
   "questions": [
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>avions terminé</span> à temps. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Plus-que-parfait = « avions » (imparfait) + participe passé. L’action était déjà achevée avant une autre action du récit."
+    {
+      "tense": "imparfait",
+      "question_html": "Je <span class='imparfait'>marchais</span> près du canal. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>parlâmes</span> longtemps sur le quai. 💚",
-      "options":["description/décor","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Passé simple = action ponctuelle et bornée. Marque du 1er groupe en -âmes (nous parlâmes)."
+    {
+      "tense": "imparfait",
+      "question_html": "Je <span class='imparfait'>regardais</span> les vitrines. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>aviez rangé</span> la salle. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"« Aviez + rangé » : résultat antérieur déjà acquis quand la scène principale commence."
+    {
+      "tense": "imparfait",
+      "question_html": "Tu <span class='imparfait'>regardais</span> souvent les étoiles. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>parlâtes</span> avec la principale. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Passé simple 2ᵖˡ : -âtes (vous parlâtes) → événement bref du premier plan."
+    {
+      "tense": "imparfait",
+      "question_html": "Tu <span class='imparfait'>lisais</span> dans le train. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>étions arrivés</span> avant la pluie. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Avec « être » : « étions + arrivés » → antériorité + accord pluriel (-s) sur le participe."
+    {
+      "tense": "imparfait",
+      "question_html": "Il <span class='imparfait'>faisait</span> très froid. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>fîmes</span> nos valises en hâte. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Forme irrégulière : nous fîmes (faire). Action ponctuelle qui fait avancer le récit."
+    {
+      "tense": "imparfait",
+      "question_html": "Elle <span class='imparfait'>portait</span> toujours une écharpe. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>étiez partis</span> très tôt. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Être à l’imparfait + participe : « étiez partis » → antériorité ; accord pluriel (-s) si « vous » = pluriel."
+    {
+      "tense": "imparfait",
+      "question_html": "On <span class='imparfait'>attendait</span> devant la porte. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>allâtes</span> droit au bureau. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Aller au passé simple : vous allâtes. Mouvement ponctuel, événement bref."
+    {
+      "tense": "imparfait",
+      "question_html": "Nous <span class='imparfait'>allions</span> chaque dimanche au marché. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>nous étions levés</span> à l’aube. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Pronominal avec « être » : « nous étions levés » → action achevée avant la scène ; accord pluriel (-és)."
+    {
+      "tense": "imparfait",
+      "question_html": "Nous <span class='imparfait'>marchions</span> au bord de l’eau. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>prîmes</span> la route du nord. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Prendre → nous prîmes. Décision/acte ponctuel du premier plan."
+    {
+      "tense": "imparfait",
+      "question_html": "Vous <span class='imparfait'>regardiez</span> la mer en silence. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>vous étiez trompés</span> de porte. 🟧",
-      "options":["description","antériorité (déjà avant)","action ponctuelle (événement)"],
-      "correct_index":1,
-      "feedback":"Pronominal + être : « vous étiez trompés » (accord pluriel -és) → erreur déjà survenue avant l’autre passé."
+    {
+      "tense": "imparfait",
+      "question_html": "Vous <span class='imparfait'>écriviez</span> souvent le soir. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>vîntes</span> à l’heure. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Venir → vous vîntes. Événement ponctuel terminé."
+    {
+      "tense": "imparfait",
+      "question_html": "Ils <span class='imparfait'>jouaient</span> dans la cour. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>avions déjà lu</span> ce roman. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Indice « déjà » : lecture achevée avant l’événement principal (antériorité)."
+    {
+      "tense": "imparfait",
+      "question_html": "Elles <span class='imparfait'>chantaient</span> doucement. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>vîmes</span> la mer au loin. 💚",
-      "options":["description/décor","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Voir → nous vîmes. Perception ponctuelle (prise de vue instantanée)."
+    {
+      "tense": "imparfait",
+      "question_html": "Il <span class='imparfait'>pleuvait</span> depuis l’aube. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>aviez promis</span> de revenir. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Promesse effectuée avant la scène racontée : « aviez + promis » = antériorité."
+    {
+      "tense": "imparfait",
+      "question_html": "Il <span class='imparfait'>neigeait</span> sans arrêt. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>dîtes</span> la vérité. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Dire → vous dîtes (2ᵖˡ, accent circonflexe). Énoncé ponctuel, achevé."
+    {
+      "tense": "imparfait",
+      "question_html": "La rue <span class='imparfait'>était</span> déserte. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>n’avions jamais vu</span> un tel orage. 🟧",
-      "options":["description","antériorité (expérience non acquise avant)","action ponctuelle"],
-      "correct_index":1,
-      "feedback":"« Jamais » situe l’expérience (non acquise) avant l’autre passé : valeur d’antériorité."
+    {
+      "tense": "imparfait",
+      "question_html": "La ville <span class='imparfait'>brillait</span> la nuit. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>fûmes</span> surpris par le bruit. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Être → nous fûmes. État résultant d’un événement ponctuel."
+    {
+      "tense": "imparfait",
+      "question_html": "Le vent <span class='imparfait'>soufflait</span> fort. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>n’aviez pas encore reçu</span> la réponse. 🟧",
-      "options":["habitude","antériorité (état avant un autre passé)","description"],
-      "correct_index":1,
-      "feedback":"« Pas encore » = état non accompli au moment de l’autre passé (antériorité sur la ligne du temps)."
+    {
+      "tense": "imparfait",
+      "question_html": "Les passants <span class='imparfait'>regardaient</span> le ciel. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>eûtes</span> raison de patienter. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Avoir → vous eûtes. Bilan ponctuel, valeur d’événement."
+    {
+      "tense": "imparfait",
+      "question_html": "Je <span class='imparfait'>pensais</span> à mon examen. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>avions écrit</span> à la mairie. 🟧",
-      "options":["description","antériorité (déjà avant)","action ponctuelle"],
-      "correct_index":1,
-      "feedback":"« Avions + écrit » : courrier déjà envoyé avant la scène principale."
+    {
+      "tense": "imparfait",
+      "question_html": "Je <span class='imparfait'>riais</span> avec mes amis. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>allâmes</span> au musée. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Aller → nous allâmes. Déplacement ponctuel, premier plan du récit."
+    {
+      "tense": "imparfait",
+      "question_html": "Tu <span class='imparfait'>attendais</span> le bus. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>aviez préparé</span> la salle. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Résultat déjà acquis (« salle préparée ») avant l’événement raconté."
+    {
+      "tense": "imparfait",
+      "question_html": "Il <span class='imparfait'>lisait</span> tranquillement. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>prîtes</span> place au premier rang. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Prendre → vous prîtes. Acte unique et borné."
+    {
+      "tense": "imparfait",
+      "question_html": "Elle <span class='imparfait'>dessinait</span> des maisons. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>étions allés</span> dire bonjour. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"Être + aller : « étions allés ». Antériorité + accord pluriel (-s)."
+    {
+      "tense": "imparfait",
+      "question_html": "Nous <span class='imparfait'>chantions</span> souvent ensemble. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>sûmes</span> la nouvelle en fin de journée. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Savoir → nous sûmes. Prise d’information ponctuelle."
+    {
+      "tense": "imparfait",
+      "question_html": "Nous <span class='imparfait'>riions</span> déjà. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Vous <span class='plus-que-parfait'>vous étiez inscrits</span> la veille. 🟧",
-      "options":["description","antériorité (déjà avant)","action ponctuelle"],
-      "correct_index":1,
-      "feedback":"Pronominal + être : « vous étiez inscrits » → action antérieure ; accord pluriel (-s)."
+    {
+      "tense": "imparfait",
+      "question_html": "Vous <span class='imparfait'>parliez</span> doucement. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Vous <span class='passe-simple'>lûtes</span> la lettre sur-le-champ. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Lire → vous lûtes. Lecture ponctuelle achevée."
+    {
+      "tense": "imparfait",
+      "question_html": "Vous <span class='imparfait'>veniez</span> ici chaque été. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
     },
-
-    { "tense":"plus-que-parfait",
-      "question_html":"Nous <span class='plus-que-parfait'>avions laissé</span> un message. 🟧",
-      "options":["habitude","antériorité (déjà avant)","description"],
-      "correct_index":1,
-      "feedback":"« Avions + laissé » : état antérieur (message déjà présent) avant la suite du récit."
+    {
+      "tense": "imparfait",
+      "question_html": "Ils <span class='imparfait'>se promenaient</span> le long du quai. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
     },
-    { "tense":"passe-simple",
-      "question_html":"Nous <span class='passe-simple'>mourûmes</span> de rire. 💚",
-      "options":["description","action ponctuelle (événement)","antériorité"],
-      "correct_index":1,
-      "feedback":"Mourir (au figuré) → nous mourûmes : événement bref, expressif."
+    {
+      "tense": "imparfait",
+      "question_html": "Elles <span class='imparfait'>échangeaient</span> des secrets. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
+    },
+    {
+      "tense": "imparfait",
+      "question_html": "Il <span class='imparfait'>travaillait</span> tard le soir. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
+    },
+    {
+      "tense": "imparfait",
+      "question_html": "Elle <span class='imparfait'>rêvait</span> souvent d’aventure. 🌸",
+      "options": [
+        "habitude",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = habitude (fréquence, répétition)."
+    },
+    {
+      "tense": "imparfait",
+      "question_html": "On <span class='imparfait'>discutait</span> tranquillement. 🌸",
+      "options": [
+        "action de fond/en cours",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = action en cours, non bornée (arrière-plan)."
+    },
+    {
+      "tense": "imparfait",
+      "question_html": "Nous <span class='imparfait'>étions</span> inquiets. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
+    },
+    {
+      "tense": "imparfait",
+      "question_html": "Vous <span class='imparfait'>sembliez</span> fatigués. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
+    },
+    {
+      "tense": "imparfait",
+      "question_html": "Ils <span class='imparfait'>habitaient</span> près d’ici. 🌸",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité (déjà avant)"
+      ],
+      "correct_index": 0,
+      "feedback": "Imparfait = décor/description ou état de fond."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Je <span class='passe-simple'>vis</span> Paul au marché. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Je <span class='passe-simple'>pris</span> le dernier train. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Je <span class='passe-simple'>dis</span> la vérité. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Je <span class='passe-simple'>fis</span> mes devoirs. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Je <span class='passe-simple'>lus</span> la lettre. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "J’<span class='passe-simple'>écrivis</span> quelques lignes. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Tu <span class='passe-simple'>vis</span> l’éclair. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Tu <span class='passe-simple'>pris</span> la parole. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Tu <span class='passe-simple'>dis</span> son nom. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Tu <span class='passe-simple'>fis</span> un signe. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Il <span class='passe-simple'>entra</span> sans frapper. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Il <span class='passe-simple'>prit</span> son sac. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Il <span class='passe-simple'>dit</span> quelques mots. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Il <span class='passe-simple'>fit</span> un pas. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Il <span class='passe-simple'>ouvrit</span> la porte. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Elle <span class='passe-simple'>écrivit</span> une note. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Elle <span class='passe-simple'>lut</span> l’annonce. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Elle <span class='passe-simple'>alla</span> au kiosque. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Elle <span class='passe-simple'>vit</span> la mer. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Elle <span class='passe-simple'>prit</span> le bus. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Nous <span class='passe-simple'>parlâmes</span> longtemps. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Nous <span class='passe-simple'>prîmes</span> la route du nord. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Nous <span class='passe-simple'>fîmes</span> nos valises. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Nous <span class='passe-simple'>vîmes</span> la montagne. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Nous <span class='passe-simple'>allâmes</span> au musée. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Vous <span class='passe-simple'>parlâtes</span> avec le proviseur. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Vous <span class='passe-simple'>prîtes</span> place au premier rang. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Vous <span class='passe-simple'>fîtes</span> silence. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Vous <span class='passe-simple'>vîntes</span> à l’heure. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Vous <span class='passe-simple'>allâtes</span> droit au bureau. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Ils <span class='passe-simple'>partirent</span> à l’aube. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Ils <span class='passe-simple'>dirent</span> bonjour. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Ils <span class='passe-simple'>firent</span> un feu. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Ils <span class='passe-simple'>ouvrirent</span> les volets. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Ils <span class='passe-simple'>virent</span> un chevreuil. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "passe-simple",
+      "question_html": "Elles <span class='passe-simple'>s’enfuirent</span> sans bruit. 💚",
+      "options": [
+        "description/décor",
+        "action ponctuelle (événement)",
+        "antériorité"
+      ],
+      "correct_index": 1,
+      "feedback": "Passé simple = action ponctuelle/soudaineté ou chaîne d’événements au premier plan."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "J’<span class='plus-que-parfait'>avais fini</span> mes devoirs. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "J’<span class='plus-que-parfait'>avais rangé</span> mon sac. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "J’<span class='plus-que-parfait'>étais parti</span> tôt. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Tu <span class='plus-que-parfait'>avais promis</span> de venir. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Tu <span class='plus-que-parfait'>avais lu</span> ce livre. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Tu <span class='plus-que-parfait'>étais arrivé</span> avant nous. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Il <span class='plus-que-parfait'>avait écrit</span> la lettre. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Il <span class='plus-que-parfait'>avait fermé</span> la porte. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Il <span class='plus-que-parfait'>était parti</span> à l’aube. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elle <span class='plus-que-parfait'>avait préparé</span> le dîner. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elle <span class='plus-que-parfait'>était allée</span> au marché. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elle <span class='plus-que-parfait'>s’était trompée</span> de numéro. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Verbe pronominal avec « être » → accord du participe selon le sujet (ex. -és, -ées)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>avions terminé</span> à temps. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>avions écrit</span> à la mairie. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>étions arrivés</span> avant la pluie. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>nous étions levés</span> à l’aube. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Verbe pronominal avec « être » → accord du participe selon le sujet (ex. -és, -ées)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>aviez rendu</span> les livres. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>aviez fermé</span> les volets. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>étiez partis</span> très tôt. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>vous étiez inscrits</span> la veille. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Verbe pronominal avec « être » → accord du participe selon le sujet (ex. -és, -ées)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Ils <span class='plus-que-parfait'>avaient compris</span> la règle. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Ils <span class='plus-que-parfait'>étaient allés</span> au musée. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Ils <span class='plus-que-parfait'>s’étaient perdus</span> en chemin. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Verbe pronominal avec « être » → accord du participe selon le sujet (ex. -és, -ées)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elles <span class='plus-que-parfait'>avaient fini</span> le chapitre. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elles <span class='plus-que-parfait'>étaient venues</span> plus tôt. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elles <span class='plus-que-parfait'>s’étaient rencontrées</span> la veille. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Verbe pronominal avec « être » → accord du participe selon le sujet (ex. -és, -ées)."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>n’avions pas compris</span> l’indice. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. La négation (« jamais », « pas encore ») précise l’état antérieur par rapport au repère passé."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>n’avions jamais vu</span> cela. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. La négation (« jamais », « pas encore ») précise l’état antérieur par rapport au repère passé."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Nous <span class='plus-que-parfait'>n’avions pas encore reçu</span> la réponse. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. La négation (« jamais », « pas encore ») précise l’état antérieur par rapport au repère passé."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>n’aviez jamais essayé</span> ce jeu. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. La négation (« jamais », « pas encore ») précise l’état antérieur par rapport au repère passé."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>n’aviez pas encore lu</span> l’article. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. La négation (« jamais », « pas encore ») précise l’état antérieur par rapport au repère passé."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Vous <span class='plus-que-parfait'>n’étiez pas revenus</span> avant minuit. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. La négation (« jamais », « pas encore ») précise l’état antérieur par rapport au repère passé."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Il <span class='plus-que-parfait'>avait déjà mangé</span>. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elle <span class='plus-que-parfait'>avait déjà rangé</span> ses affaires. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "On <span class='plus-que-parfait'>avait posé</span> les valises. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit."
+    },
+    {
+      "tense": "plus-que-parfait",
+      "question_html": "Elles <span class='plus-que-parfait'>étaient reparties</span> aussitôt. 🟧",
+      "options": [
+        "habitude",
+        "antériorité (déjà avant)",
+        "description"
+      ],
+      "correct_index": 1,
+      "feedback": "Plus-que-parfait = auxiliaire à l’imparfait (avoir/être) + participe passé : action déjà achevée avant une autre action du récit. Ici, auxiliaire « être » → souvent accord du participe avec le sujet (pluriel/féminin)."
     }
   ]
 }

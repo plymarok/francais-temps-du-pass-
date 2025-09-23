@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Passés du récit — Site simple (avec PA & feedback détaillé)</title>
+  <title>Passés du récit — Site simple (filtre par temps)</title>
   <style>
     :root{--bg:#f7f9fc;--card:#fff;--ink:#0f172a;--muted:#475569;--rose:#d81b60;--green:#15803d;--orange:#ea580c;--blue:#3b82f6}
     *{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}
@@ -22,18 +22,31 @@
     blockquote{margin:0;background:#f8fafc;border-left:4px solid #e2e8f0;padding:10px;border-radius:8px}
     .ex{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin:12px 0}
     .btn{background:#0ea5e9;color:#fff;border:none;padding:8px 12px;border-radius:10px;cursor:pointer}
+    .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}
+    .toolbar select{padding:8px 10px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;cursor:pointer}
   </style>
 </head>
 <body>
   <header>
     <h1>Passés du récit — version simple</h1>
     <p>Légende : <span class="imparfait">🌸 Imparfait</span> · <span class="passe-simple">💚 Passé simple</span> · <span class="plus-que-parfait">🟧 Plus-que-parfait</span> · <span class="passe-anterieur">🔷 Passé antérieur</span></p>
-    <p style="opacity:.9">Tout fonctionne <b>hors‑ligne</b> (zéro fetch). Les JSON sont intégrés et aussi fournis en <code>data/*.txt</code>.</p>
+    <p style="opacity:.9">Tout fonctionne <b>hors‑ligne</b>. Les JSON sont intégrés et aussi fournis en <code>data/*.txt</code>.</p>
   </header>
 
   <main>
     <section class="card">
-      <h2>❓ QCM (12) — feedback détaillé</h2>
+      <h2>❓ QCM — filtre par temps</h2>
+      <div class="toolbar">
+        <label>Filtrer : 
+          <select id="filter">
+            <option value="all">Tous</option>
+            <option value="imparfait">Imparfait (🌸)</option>
+            <option value="passe-simple">Passé simple (💚)</option>
+            <option value="plus-que-parfait">Plus-que-parfait (🟧)</option>
+            <option value="passe-anterieur">Passé antérieur (🔷)</option>
+          </select>
+        </label>
+      </div>
       <div id="qcm"></div>
     </section>
 
@@ -269,33 +282,50 @@
 
   <script>
     function J(id){return JSON.parse(document.getElementById(id).textContent);}
+    function legend(){return `<div class="legend">🌸 <span class="imparfait">Imparfait</span> · 💚 <span class="passe-simple">Passé simple</span> · 🟧 <span class="plus-que-parfait">Plus-que-parfait</span> · 🔷 <span class="passe-anterieur">Passé antérieur</span></div>`;}
 
-    // QCM
+    // QCM avec filtre
     (function(){
-      const data = J('qcm-data').questions;
+      const ALL = J('qcm-data').questions;
       const box = document.getElementById('qcm');
-      data.forEach((q,i)=>{
-        const div = document.createElement('div'); div.className='q';
-        div.innerHTML = `
-          <div class="title">Q${i+1}. ${q["question_html"]}</div>
-          <div class="opts">
-            ${q.options.map((o,idx)=>`<button class="opt" data-i="${i}" data-c="${idx}">${String.fromCharCode(97+idx)}) ${o}</button>`).join('')}
-          </div>
-          <div class="feedback" id="fb-${i}" style="display:none"></div>`;
-        box.appendChild(div);
-      });
-      box.querySelectorAll('.opt').forEach(btn=>{
-        btn.addEventListener('click',()=>{
-          const i = Number(btn.getAttribute('data-i'));
-          const c = Number(btn.getAttribute('data-c'));
-          const card = btn.closest('.q');
-          const buttons = card.querySelectorAll('.opt');
-          buttons.forEach(b=>b.classList.remove('correct','incorrect'));
-          const fb = card.querySelector('.feedback'); fb.style.display='block';
-          if(c===data[i].correct_index){ btn.classList.add('correct'); fb.innerHTML = `✅ ${data[i].feedback}`; }
-          else { btn.classList.add('incorrect'); buttons[data[i].correct_index]?.classList.add('correct'); fb.innerHTML = `❌ Mauvais choix.<br>${data[i].feedback}`; }
+      const filter = document.getElementById('filter');
+
+      function draw(list){
+        box.innerHTML = '';
+        list.forEach((q,i)=>{
+          const div = document.createElement('div'); div.className='q';
+          div.innerHTML = `
+            <div class="title">Q${i+1}. ${q["question_html"]}</div>
+            ${legend()}
+            <div class="opts">
+              ${q.options.map((o,idx)=>`<button class="opt" data-i="${i}" data-c="${idx}">${String.fromCharCode(97+idx)}) ${o}</button>`).join('')}
+            </div>
+            <div class="feedback" id="fb-${i}" style="display:none"></div>`;
+          box.appendChild(div);
         });
-      });
+        box.querySelectorAll('.opt').forEach(btn=>{
+          btn.addEventListener('click',()=>{
+            const card = btn.closest('.q');
+            const i = Number(btn.getAttribute('data-i'));
+            const c = Number(btn.getAttribute('data-c'));
+            const buttons = card.querySelectorAll('.opt');
+            buttons.forEach(b=>b.classList.remove('correct','incorrect'));
+            const fb = card.querySelector('.feedback'); fb.style.display='block';
+            const q = list[i];
+            if(c===q.correct_index){ btn.classList.add('correct'); fb.innerHTML = `✅ ${q.feedback}`; }
+            else { btn.classList.add('incorrect'); buttons[q.correct_index]?.classList.add('correct'); fb.innerHTML = `❌ Mauvais choix.<br>${q.feedback}`; }
+          });
+        });
+      }
+
+      function compute(){
+        const val = filter.value;
+        if(val==='all') return ALL.slice();
+        return ALL.filter(q=>q.tense===val);
+      }
+
+      filter.addEventListener('change', ()=> draw(compute()));
+      draw(ALL);
     })();
 
     // Transformations
@@ -343,7 +373,7 @@
       const box = document.getElementById('memo');
       data.forEach(m=>{
         const d = document.createElement('div'); d.className='q';
-        d.innerHTML = `<h3 class="${m.class}">${m.title}</h3><p>${m.desc}</p><p><i>Exemple :</i> ${m.example_html}</p>`;
+        d.innerHTML = `<h3 class="\${m.class}">\${m.title}</h3><p>\${m.desc}</p><p><i>Exemple :</i> \${m.example_html}</p>`;
         box.appendChild(d);
       });
     })();

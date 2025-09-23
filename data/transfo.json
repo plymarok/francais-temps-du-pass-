@@ -28,7 +28,7 @@
     {
       "present": "Dès qu’ils finissent, ils quittent la salle.",
       "correction_html": "Dès qu’ils <span class='passe-anterieur'>eurent fini</span>, ils <span class='passe-simple'>quittèrent</span> la salle.",
-      "justification": "« Dès que » + auxiliaire au passé simple → passé antérieur (antériorité immédiate) suivi d’un passé simple."
+      "justification": "Marqueur « dès que » + auxiliaire au passé simple → passé antérieur (antériorité immédiate) suivi d’un passé simple."
     },
     {
       "present": "Vous attendez calmement et vous souriez quand le train part.",
@@ -43,7 +43,7 @@
     {
       "present": "Après qu’il signe, tout le monde applaudit.",
       "correction_html": "Après qu’il <span class='passe-anterieur'>eut signé</span>, tout le monde <span class='passe-simple'>applaudit</span>.",
-      "justification": "« Après que » + passé antérieur → antériorité immédiate avant le passé simple."
+      "justification": "Subordonnant « après que » + passé antérieur → antériorité immédiate avant le passé simple."
     },
     {
       "present": "Ils discutent depuis un moment ; soudain, la porte s’ouvre.",
